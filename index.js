@@ -88,8 +88,8 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("YELLOW")
-    .setAuthor("About JULY Bot.", "https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png")
-    .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png `)
+    .setAuthor("About JULY Bot.", "https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png")
+    .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
@@ -131,7 +131,7 @@ m!
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**Support JULY**`) 
-    .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
+    .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
     .setTimestamp()
     
     //send the Message
