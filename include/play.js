@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("YELLOW")
-        .setAuthor(`Music Queue ended.`, "https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png")
+        .setAuthor(`Music Queue ended.`, "https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -137,7 +137,7 @@ module.exports = {
         .setURL(song.url)
         .setColor("YELLOW")
         .setImage(thumb)
-        .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png`)
+        .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
          .addField("<:emoji_74:815251307635015731> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("<a:emoji_30:815251307794399252> Length:", `\`${song.duration} Minutes\``, true)
         .addField("<:emoji_72:815251305874194482> Volume:", `\`100\``, true)
