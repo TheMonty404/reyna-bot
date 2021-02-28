@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('Nzk3MDE3MTEwNzc2NjQzNjQ1.X_gWBw.1L9l3VYdT4IhKSKMb5WBLxxv5To');
+client.login('NzkzMjE0MjU5OTMyNTYxNDE5.X-pAWA.U40A_l6RYiMKqNQXqaT4PSz3u-0');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -88,16 +88,16 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("YELLOW")
-    .setAuthor("About Calli Bot.", "https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png")
+    .setAuthor("About JULY Bot.", "https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png")
     .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)
+[Support](https://discord.gg/myQneeTbcz) - [Invite](https://discord.com/api/oauth2/authorize?client_id=793214259932561419&permissions=8&scope=bot)
 
 **Developers Bot** :
-Calli4415
+Calli#4415 - Monster#7777
 
 **Set Status** :
 Online
@@ -106,7 +106,7 @@ Online
 25/1/2021
 
 **Prefix Bot** :
-c?
+m!
 
 `)
 
@@ -125,12 +125,12 @@ c?
     .setDescription (`
 <:emoji_65:815251304070905857> Links
 
-[Support](https://discord.gg/mg5BMV8ddU)
+[Support](https://discord.gg/myQneeTbcz)
 -
-[Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=793214259932561419&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**Support Calli**`) 
+    .setTitle(`**Support JULY**`) 
     .setThumbnail(`https://media.discordapp.net/attachments/809000331807424512/814581827192881152/image0.png`)
     .setTimestamp()
     
@@ -140,7 +140,7 @@ c?
   }
 
 client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 300){
+  if(DarkMan.memberCount < 200){
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
     DarkMan.leave();
   }
