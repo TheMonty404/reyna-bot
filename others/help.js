@@ -16,19 +16,19 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
-    .setTitle(`**JULY Help**`)
+    .setTitle(`**July Help**`)
     .setDescription(`
 
 **User Commands**
-\`c!invite\` - \`c!support\` - \`c!about\`
+\`m!invite\` - \`m!support\` - \`m!about\`
 \`c!ping\` - \`c!prefix\` - \`c!uptime\`
 
 **Music Commands**
-\`c!play\` - \`c!skip\` - \`c!skipto\`
-\`c!stop\` - \`c!volume\` - \`nowplaying\`
-\`c!shuffle\` - \`c!search\` - \`c!resume\`
-\`c!remove\` - \`c!queue\` - \`c!filter\`
-\`c!loop\` - \`c!lyrics\` - \`c!radio\`
+\`m!play\` - \`m!skip\` - \`m!skipto\`
+\`m!stop\` - \`m!volume\` - \`m!nowplaying\`
+\`m!shuffle\` - \`m!search\` - \`m!resume\`
+\`m!remove\` - \`m!queue\` - \`m!filter\`
+\`m!loop\` - \`m!lyrics\` - \`m!radio\`
 
 **Links**
 [Support](https://discord.gg/myQneeTbcz) - [Invite](https://discord.com/api/oauth2/authorize?client_id=793214259932561419&permissions=8&scope=bot)
