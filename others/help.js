@@ -15,8 +15,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://media.discordapp.net/attachments/815252825012568085/815266512414703656/image0.png `)
-    .setTitle(`**Calli Help**`)
+    .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
+    .setTitle(`**JULY Help**`)
     .setDescription(`
 
 **User Commands**
@@ -31,7 +31,7 @@ module.exports = {
 \`c!loop\` - \`c!lyrics\` - \`c!radio\`
 
 **Links**
-[Support](https://discord.gg/CHUKd9z87E) - [Invite](https://discord.com/api/oauth2/authorize?client_id=797017110776643645&permissions=3758096369&scope=bot)
+[Support](https://discord.gg/myQneeTbcz) - [Invite](https://discord.com/api/oauth2/authorize?client_id=793214259932561419&permissions=8&scope=bot)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
