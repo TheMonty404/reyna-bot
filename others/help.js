@@ -15,23 +15,23 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/819348996383309874/820063150220509194/PicsArt_03-13-01.37.41.png `)
     .setTitle(`**July Help**`)
     .setDescription(`
 
 **User Commands**
-\`m!invite\` - \`m!support\` - \`m!about\`
-\`m!ping\` - \`m!prefix\` - \`m!uptime\`
+\`!invite\` - \`!support\` - \`!about\`
+\`!ping\` - \`!prefix\` - \`!uptime\`
 
 **Music Commands**
-\`m!play\` - \`m!skip\` - \`m!skipto\`
-\`m!stop\` - \`m!volume\` - \`m!nowplaying\`
-\`m!shuffle\` - \`m!search\` - \`m!resume\`
-\`m!remove\` - \`m!queue\` - \`m!filter\`
-\`m!loop\` - \`m!lyrics\` - \`m!radio\`
+\`!play\` - \`!skip\` - \`!skipto\`
+\`!stop\` - \`!volume\` - \`!nowplaying\`
+\`!shuffle\` - \`!search\` - \`!resume\`
+\`!remove\` - \`!queue\` - \`!filter\`
+\`!loop\` - \`!lyrics\` - \`!radio\`
 
 **Links**
-[Support](https://discord.gg/myQneeTbcz) - [Invite](https://discord.com/api/oauth2/authorize?client_id=793214259932561419&permissions=8&scope=bot)
+[Support](https://discord.gg/mwJmT7wkwn) - [Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
