@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODE4ODkzNTI0Nzc4MjIxNTg4.YEesBg.CNXI6Mublax3zBxsXPS7XLZYaCA');
+client.login("ODExMjk4NzEyMzQ4MjYyNDcw.YCwKzg.fRJbx_APSpCEJ5j9X1Ja0AqPMlA");
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -37,8 +37,8 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help - July Is One`, { type: "LISTENING"});
-    client.user.setActivity(`Type: GuIdis ${client.guilds.cache.size}`, { type: "LISTENING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Rayal Is One`, { type: "STREAMMING"});
+    client.user.setActivity(`Type: Server ${client.guilds.cache.size}`, { type: "STREAMMING"});
     
       }, (5000));
       ////////////////////////////////
@@ -89,25 +89,25 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("YELLOW")
-    .setAuthor("About JULY Bot.", "https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png")
-    .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
+    .setAuthor("About Rayal Bot.", "https://cdn.discordapp.com/attachments/819348996383309874/820063150220509194/PicsArt_03-13-01.37.41.png")
+    .setThumbnail(`https://cdn.discordapp.com/attachments/819348996383309874/820063150220509194/PicsArt_03-13-01.37.41.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/myQneeTbcz) - [Invite](https://discord.com/api/oauth2/authorize?client_id=793214259932561419&permissions=8&scope=bot)
+[Support](https://discord.gg/mwJmT7wkwn) - [Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
 
 **Developers Bot** :
-Calli#4415 - Monster#7777
+Aquaman#5186 - Shahroz#5186
 
 **Set Status** :
 Online
 
 **Time Create** :
-25/1/2021
+14/3/2021
 
 **Prefix Bot** :
-m!
+!
 
 `)
 
@@ -126,13 +126,13 @@ m!
     .setDescription (`
 <:emoji_65:815251304070905857> Links
 
-[Support](https://discord.gg/myQneeTbcz)
+[Support](https://discord.gg/mwJmT7wkwn)
 -
-[Invite](https://discord.com/api/oauth2/authorize?client_id=793214259932561419&permissions=8&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**Support JULY**`) 
-    .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
+    .setTitle(`**Support  RAYAL**`) 
+    .setThumbnail(`https://cdn.discordapp.com/attachments/819348996383309874/820063150220509194/PicsArt_03-13-01.37.41.png `)
     .setTimestamp()
     
     //send the Message
@@ -140,10 +140,10 @@ m!
     message.react("<:emoji_74:815251307635015731>")
   }
 
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 200){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
+client.on("guildCreate" , AQUAMAN => {
+  if(AQUAMAN.memberCount < 200){
+    console.log(`  name ( ${AQUAMAN.name} ) zhmaray memberakan ( ${AQUAMAN.memberCount}) created by AQUAMAN`)//by AQUAMAN
+    AQUAMAN.leave();
   }
 })
 
