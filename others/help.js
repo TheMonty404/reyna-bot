@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/attachments/819348996383309874/820063150220509194/PicsArt_03-13-01.37.41.png `)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/725487961839239249/820788692448444436/PicsArt_03-14-11.44.59.png `)
     .setTitle(`**July Help**`)
     .setDescription(`
 
