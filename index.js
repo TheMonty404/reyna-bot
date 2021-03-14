@@ -37,8 +37,8 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help - Rayal Is One`, { type: "STREAMMING"});
-    client.user.setActivity(`Type: Server ${client.guilds.cache.size}`, { type: "STREAMMING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Rayal Is One`, { type: "LISTENING"});
+    client.user.setActivity(`Type: Server ${client.guilds.cache.size}`, { type: "LISTENING"});
     
       }, (5000));
       ////////////////////////////////
