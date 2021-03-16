@@ -147,7 +147,7 @@ module.exports = {
 
       await playingMessage.react("⏩"); //skip
       await playingMessage.react("⏯️"); //pause
-      await playingMessage.react("⏳"); //loop
+      await playingMessage.react("🔁"); //loop
       await playingMessage.react("⏹️"); //stop
       await playingMessage.react("🕛"); //np
     } catch (error) {
@@ -235,7 +235,7 @@ module.exports = {
           }
           break;
           //loop  
-        case "⏳":
+        case "🔁":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
