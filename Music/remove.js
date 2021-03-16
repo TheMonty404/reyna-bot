@@ -31,7 +31,7 @@ execute(message, args) {
     //get the song
     const song = queue.songs.splice(args[0], 1);
     //react with approve
-    message.react("<:emoji_74:815251307635015731>")
+    message.react("✅")
     //send approve
     queue.textChannel.send(new MessageEmbed()
     .setDescription(`${message.author} removed **${song[0].title}** from the Queue`)
