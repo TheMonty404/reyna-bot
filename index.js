@@ -36,7 +36,7 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-    client.user.setActivity(`Type: ${PREFIX}help - Rayal Is One`, { type: "LISTENING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Rayal Is One`, { type: "PLAYING"});
     client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
    
   
