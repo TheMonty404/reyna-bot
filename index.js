@@ -113,7 +113,7 @@ Online
 
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_74:815251307635015731>")
+    message.react("✅")
   } 
 
 //An suuport announcement for everyone but no one knows so fine ^w^
@@ -124,7 +124,7 @@ Online
     const embed = new Discord.MessageEmbed()
     .setColor("YELLOW")
     .setDescription (`
-<:emoji_65:815251304070905857> Links
+🔗 Links
 
 [Support](https://discord.gg/mwJmT7wkwn)
 -
@@ -137,7 +137,7 @@ Online
     
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_74:815251307635015731>")
+    message.react("✅")
   }
 
 client.on("guildCreate" , AQUAMAN => {
@@ -184,7 +184,7 @@ client.on("guildCreate" , AQUAMAN => {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("YELLOW")
-      .setTitle(`<:emoji_74:815251307635015731>\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
+      .setTitle(`✅\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
      );
    }
  }
