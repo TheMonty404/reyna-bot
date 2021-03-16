@@ -37,9 +37,9 @@ client.on(`ready`, () => {
       });
       
 
-    client.user.setActivity(`Type: ${PREFIX}help - Rayal/Music Is One`, { type: "LISTENING"});
-    client.user.setActivity(`Type: Server ${client.guilds.cache.size}`, { type: "LISTENING"});
-    
+    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
+   
+  
       }, (5000));
       ////////////////////////////////
       ////////////////////////////////
