@@ -133,7 +133,7 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-       .setTitle("✅ "+song.title)
+       .setTitle("🔗 "+song.title)
         .setURL(song.url)
         .setColor("YELLOW")
         .setImage(thumb)
@@ -146,10 +146,10 @@ module.exports = {
       
 
       await playingMessage.react("⏩"); //skip
-      await playingMessage.react("▶️"); //pause
+      await playingMessage.react("⏯️"); //pause
       await playingMessage.react("⏳"); //loop
       await playingMessage.react("⏹️"); //stop
-      await playingMessage.react("✅"); //np
+      await playingMessage.react("🕛"); //np
     } catch (error) {
       console.error(error);
     }
@@ -168,7 +168,7 @@ module.exports = {
       switch (reaction.emoji.name) {
        
         //np
-        case "✅":
+        case "🕛":
         reaction.users.remove(user).catch(console.error);
         const song = queue.songs[0];
         //get current song duration in s
@@ -217,7 +217,7 @@ module.exports = {
 
           break;
         //pause
-        case "▶️":
+        case "⏯️":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.playing) {
@@ -235,7 +235,7 @@ module.exports = {
           }
           break;
           //loop  
-        case "✅":
+        case "⏳":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
