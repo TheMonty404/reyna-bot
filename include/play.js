@@ -133,12 +133,12 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-       .setTitle("<:emoji_65:815251304070905857> "+song.title)
+       .setTitle("✅ "+song.title)
         .setURL(song.url)
         .setColor("YELLOW")
         .setImage(thumb)
         .setThumbnail(`https://cdn.discordapp.com/attachments/738460113433526274/821455789868449812/PicsArt_03-14-11.44.59.png `)
-         .addField("✔️ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+         .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
         .addField("🔊 Volume:", `\`100\``, true)
 
@@ -147,7 +147,7 @@ module.exports = {
 
       await playingMessage.react("⏩"); //skip
       await playingMessage.react("▶️"); //pause
-      await playingMessage.react("📀"); //loop
+      await playingMessage.react("⏳"); //loop
       await playingMessage.react("⏹️"); //stop
       await playingMessage.react("✅"); //np
     } catch (error) {
