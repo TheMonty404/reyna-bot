@@ -2,7 +2,6 @@
 //////CONFIG LOAD///////////
 ////////////////////////////
 const { play } = require("../include/play");
-const { PLAY } = require("../include/PLAY");
 const { Client, Collection, MessageEmbed } = require("discord.js");
 const { attentionembed } = require("../util/attentionembed");
 const { PREFIX } = require(`../config.json`);
@@ -17,12 +16,6 @@ module.exports = {
   description: "(p)Plays song from YouTube/Stream",
   cooldown: 1.5,
   edesc: `Type this command to play some music.\nUsage: ${PREFIX}play <TITLE | URL>`,
-module.exports = {
-  name: "PLAY",
-  aliases: ["P"],
-  description: "(P)Plays song from YouTube/Stream",
-  cooldown: 1.5,
-  edesc: `Type this command to play some music.\nUsage: ${PREFIX}PLAY <TITLE | URL>`,
 
 async execute(message, args, client) {
     //If not in a guild return
