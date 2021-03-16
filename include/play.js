@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("YELLOW")
-        .setAuthor(`Music Queue ended.`, "https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png")
+        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/738460113433526274/821455789868449812/PicsArt_03-14-11.44.59.png")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -137,19 +137,19 @@ module.exports = {
         .setURL(song.url)
         .setColor("YELLOW")
         .setImage(thumb)
-        .setThumbnail(`https://media.discordapp.net/attachments/795711131901493268/815593900588269588/image0.png `)
-         .addField("<:emoji_74:815251307635015731> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("<a:emoji_30:815251307794399252> Length:", `\`${song.duration} Minutes\``, true)
-        .addField("<:emoji_72:815251305874194482> Volume:", `\`100\``, true)
+        .setThumbnail(`https://cdn.discordapp.com/attachments/738460113433526274/821455789868449812/PicsArt_03-14-11.44.59.png `)
+         .addField("✔️ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
+        .addField("🔊 Volume:", `\`100\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
 
-      await playingMessage.react("<:emoji_59:81446855945>"); //skip
-      await playingMessage.react("<:emoji_55:814468559362>"); //pause
-      await playingMessage.react("<:emoji_53:81446855915759>"); //loop
-      await playingMessage.react("<:emoji_54:814468559237>"); //stop
-      await playingMessage.react("<:emoji_61:8144685>"); //np
+      await playingMessage.react("⏩"); //skip
+      await playingMessage.react("▶️"); //pause
+      await playingMessage.react("✅"); //loop
+      await playingMessage.react("⏹️"); //stop
+      await playingMessage.react("✅"); //np
     } catch (error) {
       console.error(error);
     }
@@ -168,7 +168,7 @@ module.exports = {
       switch (reaction.emoji.name) {
        
         //np
-        case "<:emoji_61:814468559597207572>":
+        case "✅":
         reaction.users.remove(user).catch(console.error);
         const song = queue.songs[0];
         //get current song duration in s
@@ -187,8 +187,8 @@ module.exports = {
         let nowPlaying = new MessageEmbed()
           .setTitle("Now playing")
           .setDescription(`[**${song.title}**](${song.url})`)
-          .addField("<:emoji_61:814468559597207572> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-          .addField("<:emoji_62:814468559613722634> Length:", `\`${song.duration} Minutes\``, true)
+          .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+          .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
           .setColor("YELLOW")
           //if its a stream
           if(ms >= 10000) {
@@ -205,7 +205,7 @@ module.exports = {
         
         break;
         //skip
-        case "<:emoji_59:814468559454994452>":
+        case "⏩":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
@@ -217,7 +217,7 @@ module.exports = {
 
           break;
         //pause
-        case "<:emoji_55:814468559362588682>":
+        case "▶️":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.playing) {
@@ -235,7 +235,7 @@ module.exports = {
           }
           break;
           //loop  
-        case "<:emoji_53:814468559157592125>":
+        case "✅":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
@@ -244,7 +244,7 @@ module.exports = {
           queue.textChannel.send(loopembed).catch(console.error);
           break;
           //stop
-        case "<:emoji_54:814468559237283860>":
+        case "⏹️":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
