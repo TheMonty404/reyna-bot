@@ -17,12 +17,12 @@ module.exports = {
     let helpEmbed = new MessageEmbed()
     .setDescription(`
 
-🔎 [Click here](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot) **to invite the bot.**
+🔗 [Click here](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot) **to invite the bot.**
 `)
 
   
    .setColor("YELLOW");
-   message.react("<:emoji_12: 821459760402399294>")
+   message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
