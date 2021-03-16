@@ -1,4 +1,4 @@
-# Musicium
+#  RAYAL/MUSIC
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Tomato6966/)
@@ -17,28 +17,28 @@ This is an old version use [this repository.](https://github.com/Tomato6966/dist
 
 #### Commands:
 
-- `+filter <FILTERNAME>` --    *Set Audio - Effects*
-- `+loop`                --    *Toggle music loop*
-- `+lyrics`              --    *Get lyrics for the currently playing song*
-- `+nowplaying`          --    *Show current song*
-- `+pause`               --    *Pause the currently playing music*
-- `+play <TITEL | URL>`  --    *Plays song from YouTube/Stream*
-- `+queue`               --    *Show the music queue and now playing*
-- `+radio <RADIOSTATION>`--    *Play a Radiostation*
-- `+remove`              --    *Remove song from the queue*
-- `+resume`              --    *Resume currently playing music*
-- `+search <TITEL | URL>`--    *Search and select videos to play*
-- `+shuffle`             --    *Shuffles the current Queue!*
-- `+skip`                --    *Skip the currently playing song*
-- `+skipto <QUEUE NUM.>` --    *Skip to the selected queue number*
-- `+stop`                --    *Stops the music*
-- `+volume <VOL. NUM.>`  --    *Change volume*
-- `+botlist`             --    *Gives you the botlists of the Bot*
-- `+help [COMMAND]`      --    *Gives you a list of all help Commands*
-- `+invite`              --    *Gives you an invite*
-- `+ping`                --    *Gives you the latency of the Bot*
-- `+prefix`              --    *Sets a server specific Prefix*
-- `+uptime`              --    *Gives you the uptime of the Bot*
+- `!filter <FILTERNAME>` --    *Set Audio - Effects*
+- `!loop`                --    *Toggle music loop*
+- `!lyrics`              --    *Get lyrics for the currently playing song*
+- `!nowplaying`          --    *Show current song*
+- `!pause`               --    *Pause the currently playing music*
+- `!play <TITEL | URL>`  --    *Plays song from YouTube/Stream*
+- `!queue`               --    *Show the music queue and now playing*
+- `!radio <RADIOSTATION>`--    *Play a Radiostation*
+- `!remove`              --    *Remove song from the queue*
+- `!resume`              --    *Resume currently playing music*
+- `!search <TITEL | URL>`--    *Search and select videos to play*
+- `!shuffle`             --    *Shuffles the current Queue!*
+- `!skip`                --    *Skip the currently playing song*
+- `!skipto <QUEUE NUM.>` --    *Skip to the selected queue number*
+- `!stop`                --    *Stops the music*
+- `!volume <VOL. NUM.>`  --    *Change volume*
+- `!botlist`             --    *Gives you the botlists of the Bot*
+- `!help [COMMAND]`      --    *Gives you a list of all help Commands*
+- `!invite`              --    *Gives you an invite*
+- `!ping`                --    *Gives you the latency of the Bot*
+- `!prefix`              --    *Sets a server specific Prefix*
+- `+!uptime`              --    *Gives you the uptime of the Bot*
 
 **NO API-KEY NEEDED!** That's because it uses a scraper (`youtube-sr`)!
 
@@ -59,7 +59,7 @@ This is an old version use [this repository.](https://github.com/Tomato6966/dist
 ```json
 {
   "TOKEN": "",
-  "PREFIX": "+",
+  "PREFIX": "!",
   "approveemoji": "EMOJIID",
   "denyemoji": "EMOJIID",
   "erroremoji": "EMOJIID"
