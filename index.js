@@ -36,8 +36,8 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-    client.user.setActivity(`Type: ${PREFIX}help - Rayal/Music`, { type: "STREAMING"});
-    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "STREAMING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Rayal/Music`, { type: "PLAYING"});
+    client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
    
   
       }, (5000));
@@ -89,8 +89,8 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("YELLOW")
-    .setAuthor("About Rayal Bot.", "https://cdn.discordapp.com/attachments/725487961839239249/820788692448444436/PicsArt_03-14-11.44.59.png")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/725487961839239249/820788692448444436/PicsArt_03-14-11.44.59.png `)
+    .setAuthor("About Rayal Bot.", "https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png")
+    .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
@@ -134,7 +134,7 @@ Online
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**{Support  RAYAL}**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif `)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
     .setTimestamp()
     
     //send the Message
