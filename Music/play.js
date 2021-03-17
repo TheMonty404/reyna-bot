@@ -71,7 +71,7 @@ const search = args.join(" ");
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
           message.channel.send(new MessageEmbed().setColor("BLUE")
-            .setDescription(`**🔎 Searching 📀 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**🔎 Searching <:emoji_1: 821678045366190080> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("BLUE")
