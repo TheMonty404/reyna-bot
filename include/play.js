@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("RED")
-        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/738460113433526274/821455789868449812/PicsArt_03-14-11.44.59.png")
+        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -135,16 +135,15 @@ module.exports = {
       const newsong = new MessageEmbed()
        .setTitle("🔗 "+song.title)
         .setURL(song.url)
-        .setColor("PINK")
+        .setColor("RED")
         .setImage(thumb)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/738460113433526274/821455789868449812/PicsArt_03-14-11.44.59.png `)
+        .setThumbnail(`https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif `)
          .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
         .addField("🔊 Volume:", `\`100\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
-
       await playingMessage.react("⏩"); //skip
       await playingMessage.react("⏯️"); //pause
       await playingMessage.react("🔁"); //loop
@@ -189,7 +188,7 @@ module.exports = {
           .setDescription(`[**${song.title}**](${song.url})`)
           .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
           .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
-          .setColor("PINK")
+          .setColor("RED")
           //if its a stream
           if(ms >= 10000) {
             nowPlaying.addField("\u200b", "🔴 LIVE", false);
