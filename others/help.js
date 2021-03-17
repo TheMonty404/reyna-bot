@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/attachments/725487961839239249/820788692448444436/PicsArt_03-14-11.44.59.png `)
+    .setThumbnail(`https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif `)
     .setTitle(`**Rayal Help**`)
     .setDescription(`
 
@@ -38,7 +38,7 @@ module.exports = {
 \`%loop\` - \`%lyrics\` - \`%radio\`
 =======================
 
-**Links**
+**{Links}**
 [{Support}](https://discord.gg/mwJmT7wkwn)
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
 `)
