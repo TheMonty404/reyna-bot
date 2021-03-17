@@ -66,7 +66,7 @@ const search = args.join(" ");
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("YELOW")
+        message.channel.send(new MessageEmbed().setColor("YELLOW")
           .setDescription(`** 👍 Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
@@ -139,7 +139,7 @@ serverQueue.songs.push(song);
         .setURL(song.url)
         .setColor("RED")
         .setImage(thumb)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/738460113433526274/821455789868449812/PicsArt_03-14-11.44.59.png `)
+        .setThumbnail(`https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif `)
          .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
         .addField("🔊 Volume:", `\`100\``, true)
