@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("RED")
-        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif")
+        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -216,7 +216,7 @@ module.exports = {
 
           break;
         //pause
-        case "⏯️":
+        case "⏯":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           if (queue.playing) {
