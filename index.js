@@ -95,19 +95,21 @@ client.on(`message`, async (message) => {
     .setTimestamp()
     .setDescription(`
 
-[Support](https://discord.gg/mwJmT7wkwn) - [Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
+[{Support}](https://discord.gg/mwJmT7wkwn)
 
-**Developers Bot** :
+[Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
+
+**{Developers Bot}** :
 Dev/Aquaman#5186
 
-**Set Status** :
+**{Set Status}** :
 Online
 
-**Time Create** :
+**{Time Create}** :
 14/3/2021
 
-**Prefix Bot** :
-!
+**{Prefix Bot}** :
+%
 
 `)
 
@@ -122,7 +124,7 @@ Online
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("YELLOW")
+    .setColor("DARKBLUE")
     .setDescription (`
 🔗 Links
 
@@ -131,8 +133,8 @@ Online
 [Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**Support  RAYAL**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/725487961839239249/820788692448444436/PicsArt_03-14-11.44.59.png `)
+    .setTitle(`**{Support  RAYAL}**`) 
+    .setThumbnail(`https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif `)
     .setTimestamp()
     
     //send the Message
@@ -153,7 +155,7 @@ client.on("guildCreate" , AQUAMAN => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("YELLOW")
+    .setColor("RED")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -183,7 +185,7 @@ client.on("guildCreate" , AQUAMAN => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("YELLOW")
+      new MessageEmbed().setColor("BROWN")
       .setTitle(`✅\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
      );
    }
@@ -194,7 +196,7 @@ client.on("guildCreate" , AQUAMAN => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("YELLOW")
+   message.reply( new MessageEmbed().setColor("BROWN")
    .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
