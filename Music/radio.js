@@ -135,10 +135,10 @@
         return message.author.send(resultsEmbed);      
       //if no args
       if (args[0] == null) {
-        message.channel.send(    new MessageEmbed().setColor("YELLOW")
+        message.channel.send(    new MessageEmbed().setColor("GRAY")
         .setDescription(`** 🕛 ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
-        message.author.send(new MessageEmbed().setColor("YELLOW")
+        message.author.send(new MessageEmbed().setColor("GRAY")
         .setDescription(`** 🕛 Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
@@ -163,7 +163,7 @@
         channel.leave();
         return message.reply(
         new MessageEmbed()
-        .setColor("YELLOW")
+        .setColor("RED")
         .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``)
       );}
 
@@ -180,7 +180,7 @@
   if(Number(i) === 35) {
     channel.leave();
     return message.reply(  new MessageEmbed()
-  .setColor("YELLOW")
+  .setColor("RED")
   .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``));}
   //define the Radio Args like title and url
   const args2 = Radiostations[i-1].split(` `);
@@ -219,7 +219,7 @@
   .setDescription(`** 👍 Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
-  message.channel.send(new MessageEmbed().setColor("YELLOW")
+  message.channel.send(new MessageEmbed().setColor("BLUE")
   .setDescription(`** 🔎 Searching 📀 \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
@@ -252,7 +252,7 @@
     //the new song embed
     const newsong = new MessageEmbed()
       .setTitle("🕛 " + song.title)
-      .setColor("YELLOW")
+      .setColor("GRAY")
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
       .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
