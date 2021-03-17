@@ -20,22 +20,32 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
+=================
 \`!invite\` - \`!support\` - \`!about\`
+=======================================
 \`!ping\` - \`!prefix\` - \`!uptime\`
-
+=======================================
 **Music Commands**
+===================
 \`!play\` - \`!skip\` - \`!skipto\`
+=========================================
 \`!stop\` - \`!volume\` - \`!nowplaying\`
+=========================================
 \`!shuffle\` - \`!search\` - \`!resume\`
+=========================================
 \`!remove\` - \`!queue\` - \`!filter\`
+=========================================
 \`!loop\` - \`!lyrics\` - \`!radio\`
+=========================================
 
 **Links**
-[Support](https://discord.gg/mwJmT7wkwn) - [Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
+[Support](https://discord.gg/mwJmT7wkwn)
+
+[Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setColor("YELLOW");
+   .setColor("PURPLE");
    message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
 
