@@ -57,24 +57,24 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("BLUE")
             .setDescription(`**🔎 Searching 📀 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("BLUE")
             .setDescription(`**🔎 Searching 📀 \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("YELLOW")
+        message.channel.send(new MessageEmbed().setColor("BLUE")
           .setDescription(`** 👍 Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("BLUE")
             .setDescription(`**🔎 Searching 📀 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("YELLOW")
+          message.channel.send(new MessageEmbed().setColor("BLUE")
             .setDescription(`**🔎 Searching 📀 \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
@@ -137,7 +137,7 @@ serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
         .setTitle("🔗 "+song.title)
         .setURL(song.url)
-        .setColor("YELLOW")
+        .setColor("RED")
         .setImage(thumb)
         .setThumbnail(`https://cdn.discordapp.com/attachments/738460113433526274/821455789868449812/PicsArt_03-14-11.44.59.png `)
          .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
