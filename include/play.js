@@ -135,9 +135,9 @@ module.exports = {
       const newsong = new MessageEmbed()
        .setTitle("🔗 "+song.title)
         .setURL(song.url)
-        .setColor("RED")
+        .setColor("YELLOW")
         .setImage(thumb)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/809730564088135704/821648013725925427/output_HEQpRo.gif `)
+        .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
          .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
         .addField("🔊 Volume:", `\`100\``, true)
@@ -188,7 +188,7 @@ module.exports = {
           .setDescription(`[**${song.title}**](${song.url})`)
           .addField("✅ Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
           .addField("🔗 Length:", `\`${song.duration} Minutes\``, true)
-          .setColor("RED")
+          .setColor("YELLOW")
           //if its a stream
           if(ms >= 10000) {
             nowPlaying.addField("\u200b", "🔴 LIVE", false);
