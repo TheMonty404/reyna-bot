@@ -66,7 +66,7 @@ const search = args.join(" ");
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("BLUE")
+        message.channel.send(new MessageEmbed().setColor("YELOW")
           .setDescription(`** 👍 Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
