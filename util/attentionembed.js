@@ -17,7 +17,7 @@ module.exports = {
 
     let resultsEmbed = new MessageEmbed()
       .setTitle("✅" + titel)
-      .setColor("YELLOW")
+      .setColor("GREEN")
       
       message.channel.send(resultsEmbed);
       message.react("✅")
