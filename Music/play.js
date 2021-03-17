@@ -58,11 +58,11 @@ const search = args.join(" ");
       if (serverQueue) {
         if (urlValid) {
           message.channel.send(new MessageEmbed().setColor("BLUE")
-            .setDescription(`**📺 Searching 🔎 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**🖥 Searching 🔎 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("BLUE")
-            .setDescription(`**📺 Searching 🔎 \`${args.join(" ")}\`**`))
+            .setDescription(`**🖥 Searching 🔎 \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
@@ -71,11 +71,11 @@ const search = args.join(" ");
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
           message.channel.send(new MessageEmbed().setColor("BLUE")
-            .setDescription(`**📺 Searching 🔎 [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**🖥 Searching 🔎 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("BLUE")
-            .setDescription(`**📺 Searching 🔎 \`${args.join(" ")}\`**`))
+            .setDescription(`**🖥 Searching 🔎 \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
         queueConstruct.connection.voice.setDeaf(true);
