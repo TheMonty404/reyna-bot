@@ -32,7 +32,7 @@ async execute(message, args, client) {
     //If no args return
     if (!args.length)
       return attentionembed(message, `Usage: ${message.client.prefix}play <YouTube URL | Video Name | Soundcloud URL>`);
-    message.react("<emoji_4822203026776391711>").catch(console.error);
+    message.react("<:emoji_4:822203026776391711>").catch(console.error);
     const permissions = channel.permissionsFor(message.client.user);
     if (!permissions.has("CONNECT"))
       return attentionembed(message, "I need permissions to join your channel!");
@@ -58,24 +58,24 @@ const search = args.join(" ");
       if (serverQueue) {
         if (urlValid) {
           message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<emoji_7822203487555026986> Searching <emoji_5822203051082252368> [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<emoji_7822203487555026986> Searching <emoji_5822203051082252368> \`${args.join(" ")}\`**`))
+            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
         message.channel.send(new MessageEmbed().setColor("PURPLE")
-          .setDescription(`** <emoji_5822203051082252368> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+          .setDescription(`** <:emoji_5:822203051082252368> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
           message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<emoji_7822203487555026986> Searching <emoji_5822203051082252368> [\`LINK\`](${args.join(" ")})**`))
+            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> [\`LINK\`](${args.join(" ")})**`))
         }
         else {
           message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<emoji_7822203487555026986> Searching <emoji_5822203051082252368> \`${args.join(" ")}\`**`))
+            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
         queueConstruct.connection.voice.setDeaf(true);
@@ -135,15 +135,15 @@ catch {
       }
 serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
-        .setTitle("<emoji_3822203003859107890> "+song.title)
+        .setTitle("<:emoji_3:822203003859107890> "+song.title)
         .setURL(song.url)
         .setColor("PURPLE")
         .setImage(thumb)
         .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
-         .addField("<emoji_4822203026776391711> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("<emoji_3822203003859107890> Length:", `\`${song.duration} Minutes\``, true)
-        .addField("<emoji_1822202947646783519> Volume:", `\`100\``, true)
-        .addField("<emoji_3822203003859107890> Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
+         .addField("<:emoji_4:822203026776391711> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("<:emoji_3:822203003859107890> Length:", `\`${song.duration} Minutes\``, true)
+        .addField("<:emoji_1:822202947646783519> Volume:", `\`100\``, true)
+        .addField("<:emoji_3:822203003859107890> Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
         return serverQueue.textChannel
         .send(newsong)
         .catch(console.error);
