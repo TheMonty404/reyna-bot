@@ -19,7 +19,7 @@ execute(message, args) {
     //if not in a guild return
     if (!message.guild) return;
     //react with approve
-    message.react("<emoji_4822203026776391711>").catch(console.error);
+    message.react("<:emoji_4:822203026776391711>").catch(console.error);
     //if no args return error
     if (!args.length)
       return attentionembed(message, `Try: ${message.client.prefix}${module.exports.name} <Queue Number>`)
