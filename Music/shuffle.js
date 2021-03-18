@@ -19,7 +19,7 @@ execute(message,args,client) {
     //if not in a guild return
     if(!message.guild) return;
     //react with approve emoji
-    message.react("✅").catch(console.error);
+    message.react("<emoji_4822203026776391711>").catch(console.error);
     //get the Queue
     const queue = message.client.queue.get(message.guild.id);
     //if no queue return error
@@ -40,6 +40,6 @@ execute(message,args,client) {
     //send the Approve message
     queue.textChannel.send(new MessageEmbed()
     .setDescription(`**${message.author} shuffled the Queue**`)
-    .setColor("GREEN")).catch(console.error);
+    .setColor("PURPLE")).catch(console.error);
   }
 };
