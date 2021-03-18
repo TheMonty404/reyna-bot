@@ -39,7 +39,7 @@ module.exports = {
     db.set(`prefix_${message.guild.id}`, args[0])
 
     message.channel.send(new MessageEmbed()
-    .setColor("YELLOW")
+    .setColor("PURPLE")
     .setTitle(`Successfully set new prefix to **${args[0]}**`))
   }
 }
