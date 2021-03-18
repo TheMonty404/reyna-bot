@@ -127,7 +127,7 @@
           { name: `***🇵🇱 Polska RADIO:***`, value: `**33: ** [\`${Radiostations[33-1].split(" ")[0]}\`](${Radiostations[33-1].split(" ")[1]})
   **34: ** [\`${Radiostations[34-1].split(" ")[0]}\`](${Radiostations[34-1].split(" ")[1]})`, inline: true },
         )		
-        .setColor("YELLOW")
+        .setColor("PURPLE")
         .setFooter(`Type: ${prefix}radio <1-34>`,  client.user.displayAvatarURL())
         .setTimestamp();
           //if not guild send this
@@ -180,7 +180,7 @@
   if(Number(i) === 35) {
     channel.leave();
     return message.reply(  new MessageEmbed()
-  .setColor("RED")
+  .setColor("PURPLE")
   .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``));}
   //define the Radio Args like title and url
   const args2 = Radiostations[i-1].split(` `);
@@ -216,11 +216,11 @@
   //Send info message for joining 
   if(!serverQueue)
   message.channel.send(    new MessageEmbed().setColor("PURPLE")
-  .setDescription(`** <emoji_5822203051082252368> Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
+  .setDescription(`** <:emoji_5:822203051082252368> Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
   message.channel.send(new MessageEmbed().setColor("PURPLE")
-  .setDescription(`** <emoji_7822203487555026986> Searching <emoji_6822203074386067526> \`${Radiostations[i-1].split(" ")[0]}\`**`));
+  .setDescription(`** <:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
   await queueConstruct.connection.voice.setDeaf(true);
