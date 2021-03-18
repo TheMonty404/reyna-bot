@@ -30,7 +30,7 @@ async execute(message) {
     .setColor(queue.loop ? "YELLOW" : "YELLOW")
     .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "")
     //react with approve emoji
-    message.react("✅");
+    message.react("<emoji_4822203026776391711>");
     //send message into the Queue chat
     return queue.textChannel
       .send(loopembed)
