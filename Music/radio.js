@@ -75,7 +75,7 @@
     let resultsEmbed = new Discord.MessageEmbed()
         .setTitle(`** 🕛 Available Radio Stations**`)//
         .addFields(
-          { name: `*** <:emoji_65:815251304070905857> Standard Radio***`, value: `**1:  ** [\`${Radiostations[1-1].split(" ")[0]}\`](${Radiostations[1-1].split(" ")[1]})
+          { name: `*** 🕛 Standard Radio***`, value: `**1:  ** [\`${Radiostations[1-1].split(" ")[0]}\`](${Radiostations[1-1].split(" ")[1]})
           **2:  ** [\`${Radiostations[2-1].split(" ")[0]}\`](${Radiostations[2-1].split(" ")[1]})
           **3:  ** [\`${Radiostations[3-1].split(" ")[0]}\`](${Radiostations[3-1].split(" ")[1]})
           **4:  ** [\`${Radiostations[4-1].split(" ")[0]}\`](${Radiostations[4-1].split(" ")[1]})
@@ -135,10 +135,10 @@
         return message.author.send(resultsEmbed);      
       //if no args
       if (args[0] == null) {
-        message.channel.send(    new MessageEmbed().setColor("GRAY")
+        message.channel.send(    new MessageEmbed().setColor("PURPLE")
         .setDescription(`** 🕛 ${message.author} Check your \`direct messages\` for a list of Radio Stations!**`)
         );
-        message.author.send(new MessageEmbed().setColor("GRAY")
+        message.author.send(new MessageEmbed().setColor("PURPLE")
         .setDescription(`** 🕛 Sent from <#${message.channel.id}>**`))
         return message.author.send(resultsEmbed);
       }
@@ -163,7 +163,7 @@
         channel.leave();
         return message.reply(
         new MessageEmbed()
-        .setColor("RED")
+        .setColor("PURPLE")
         .setTitle( `Not a valid radio station please use a Number between \`1\` and \`${Radiostations.length}\``)
       );}
 
@@ -215,12 +215,12 @@
   queueConstruct.connection = await channel.join().catch(console.error);
   //Send info message for joining 
   if(!serverQueue)
-  message.channel.send(    new MessageEmbed().setColor("YELLOW")
-  .setDescription(`** 👍 Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
+  message.channel.send(    new MessageEmbed().setColor("PURPLE")
+  .setDescription(`** <emoji_5822203051082252368> Joined \`${channel.name}\` 📄 bouned \`#${message.channel.name}\`**`)
   .setFooter(`${message.author.username}#${message.author.discriminator}`));
   //send Search something embed
-  message.channel.send(new MessageEmbed().setColor("BLUE")
-  .setDescription(`** 🔎 Searching 📀 \`${Radiostations[i-1].split(" ")[0]}\`**`));
+  message.channel.send(new MessageEmbed().setColor("PURPLE")
+  .setDescription(`** <emoji_7822203487555026986> Searching <emoji_6822203074386067526> \`${Radiostations[i-1].split(" ")[0]}\`**`));
   //mute yourself
   await queueConstruct.connection.voice.setSelfDeaf(true);
   await queueConstruct.connection.voice.setDeaf(true);
@@ -252,7 +252,7 @@
     //the new song embed
     const newsong = new MessageEmbed()
       .setTitle("🕛 " + song.title)
-      .setColor("GRAY")
+      .setColor("PURPLE")
       .setThumbnail(song.thumbnail)
       .setURL(song.url)
       .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
