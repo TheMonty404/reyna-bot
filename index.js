@@ -78,7 +78,7 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("YELLOW").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("PURPLE").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
 
 
@@ -88,7 +88,7 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("YELLOW")
+    .setColor("PURPLE")
     .setAuthor("About Rayal Bot.", "https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png")
     .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
@@ -115,7 +115,7 @@ Online
 
     //send the Message
     message.channel.send(embed)
-    message.react("✅")
+    message.react("<:emoji_4:822203026776391711>")
   } 
 
 //An suuport announcement for everyone but no one knows so fine ^w^
@@ -124,13 +124,13 @@ Online
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("DARKBLUE")
+    .setColor("PURPLE")
     .setDescription (`
-🔗 Links
+<:emoji_3:822203003859107890> {Links}
 
-[Support](https://discord.gg/mwJmT7wkwn)
+[{Support}](https://discord.gg/mwJmT7wkwn)
 -
-[Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)`)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
     .setTitle(`**{Support  RAYAL}**`) 
@@ -139,7 +139,7 @@ Online
     
     //send the Message
     message.channel.send(embed)
-    message.react("✅")
+    message.react("<:emoji_4:822203026776391711>")
   }
 
 client.on("guildCreate" , AQUAMAN => {
@@ -155,7 +155,7 @@ client.on("guildCreate" , AQUAMAN => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("RED")
+    .setColor("PURPLE")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -185,8 +185,8 @@ client.on("guildCreate" , AQUAMAN => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("BROWN")
-      .setTitle(`✅\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
+      new MessageEmbed().setColor("PURPLE")
+      .setTitle(`<:emoji_4:822203026776391711>\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
      );
    }
  }
@@ -196,7 +196,7 @@ client.on("guildCreate" , AQUAMAN => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("BROWN")
+   message.reply( new MessageEmbed().setColor("PURPLE")
    .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
