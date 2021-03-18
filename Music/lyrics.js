@@ -20,7 +20,7 @@ async execute(message) {
     //if not in a Guild return
     if(!message.guild) return;
     //react with approve emoji
-    message.react("<emoji_4822203026776391711>").catch(console.error);
+    message.react("<:emoji_4:822203026776391711>").catch(console.error);
     //Get the current Queue
     const queue = message.client.queue.get(message.guild.id);
     //If no Queue Error
@@ -48,9 +48,9 @@ async execute(message) {
     }
     //define lyrics Embed
     let lyricsEmbed = new MessageEmbed()
-      .setTitle("<emoji_4822203026776391711> Lyrics")
+      .setTitle("<:emoji_4:822203026776391711> Lyrics")
       .setDescription(lyrics)
-      .setColor("GREEN")
+      .setColor("PURPLE")
     //if to long make slice it
     if (lyricsEmbed.description.length >= 2048)
       //slice the embed description and redefine it
