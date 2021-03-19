@@ -21,10 +21,10 @@ module.exports = {
 
 <a:discord:813406342173818910>**User Commands**<a:discord:813406342173818910>
 >>>>>>>>>>>>>
-<a:discord:767019332042883082>\`!invite\` - \`!support\` - \`!about\`
+\`!invite\` - \`!support\` - \`!about\`
 \`!ping\` - \`!prefix\` - \`!uptime\`
 <a:music:813460704031145986>**Music Commands**<a:music:813460704031145986>
->>>>>>><a:music:813460704031145986>>>>>>>>
+>>>>>>><a:emoji_20:813716400408887316>>>>>>>>
 <a:dark:813714900777959444>\`!play\` - \`!skip\` - \`!skipto\`
 <a:dark:813714900777959444>\`!stop\` - \`!volume\` - \`!nowplaying\`
 <a:dark:813714900777959444>\`!shuffle\` - \`!search\` - \`!resume\`
