@@ -22,9 +22,9 @@ module.exports = {
 **User Commands**
 ____________
 \`!invite\` - \`!support\` - \`!about\`
-____________________
+
 \`!ping\` - \`!prefix\` - \`!uptime\`
-____________________
+
 **Music Commands**
 =============
 \`!play\` - \`!skip\` - \`!skipto\`
