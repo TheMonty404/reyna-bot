@@ -33,10 +33,21 @@ module.exports = {
 =======================
 \`%shuffle\` - \`%search\` - \`%resume\`
 =======================
-\`%remove\` - \`%queue\` - \`%filter\`
+\`%remove\` - \`%queue\` 
 =======================
 \`%loop\` - \`%lyrics\` - \`%radio\`
 =======================
+**Filter Commands**
+=============
+\`%filter bassboost\` - \`%filter 8D\` - \`%filter vaporwave\`
+=======================
+\`%filter nightcore\` - \`%filter phaser\` - \`%filter tremolo\`
+=======================
+\`%filter vibrato\` - \`%filter surrounding\` - \`%filter subboost\`
+=======================
+\`%filter clear\` - \`%filter pulsator\`
+=======================
+    
 
 **{[<a:links:813729922643263558>][Links}**
 [{Support}](https://discord.gg/mwJmT7wkwn)
