@@ -26,7 +26,7 @@ module.exports = {
 \`%ping\` - \`%prefix\` - \`%uptime\`
 =======================
 **Music Commands**
-=====https://cdn.discordapp.com/emojis/781510696265449493.gif========
+=====emojis/781510696265449493.gif========
 \`%play\` - \`%skip\` - \`%skipto\`
 =======================
 \`%stop\` - \`%volume\` - \`%nowplaying\`
