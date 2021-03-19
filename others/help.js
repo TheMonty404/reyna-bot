@@ -21,7 +21,7 @@ module.exports = {
 
 <a:discord:813406342173818910>**User Commands**<a:discord:813406342173818910>
 >>>>>>>>>>>>>
-\`!invite\` - \`!support\` - \`!about\`
+<a:discord:767019332042883082>\`!invite\` - \`!support\` - \`!about\`
 \`!ping\` - \`!prefix\` - \`!uptime\`
 <a:music:813460704031145986>**Music Commands**<a:music:813460704031145986>
 >>>>>>>>>>>>>>
@@ -32,8 +32,8 @@ module.exports = {
 <a:dark:813714900777959444>\`!loop\` - \`!lyrics\` - \`!radio\`
 **Filter Commands**
 >>>>>>>>>>>>>
-<a:chap:814607523092103171>\`!filter bassboost\` - \`!filter 8D\`<a:rast:813403866472251399>
-<a:chap:814607523092103171>\`!filter vaporwave\`-\`!filter tremolo\`<a:rast:813403866472251399>
+<a:chap:814607523092103171>\`!filter bassboost\` - \`!filter 8D\`
+<a:chap:814607523092103171>\`!filter vaporwave\`-\`!filter tremolo\`
 <a:chap:814607523092103171>\`!filter phaser\` - \`!filter subboost\`
 <a:chap:814607523092103171>\`!filter nightcote\`-\`!filter pulsator\`
 <a:chap:814607523092103171>\`!filter vibrato\` - \`!filter clear\`
