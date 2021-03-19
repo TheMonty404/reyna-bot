@@ -25,7 +25,7 @@ module.exports = {
 =======================
 \`%ping\` - \`%prefix\` - \`%uptime\`
 =======================
-.setThumbnail(`https://cdn.discordapp.com/emojis/781510696265449493.gif `**Music Commands**
+**Music Commands**
 =============
 \`%play\` - \`%skip\` - \`%skipto\`
 =======================
