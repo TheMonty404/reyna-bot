@@ -33,9 +33,9 @@ module.exports = {
 **Filter Commands**
 >>>>>>>>>>>>>
 <a:chap:814607523092103171>\`!filter bassboost\` -- \`!filter 8D\`
-<a:chap:814607523092103171>\`!filter vaporwave\`-\`!filter tremolo\`
+<a:chap:814607523092103171>\`!filter vaporwave\`--\`!filter tremolo\`
 <a:chap:814607523092103171>\`!filter phaser\` -- \`!filter subboost\`
-<a:chap:814607523092103171>\`!filter nightcote\` -- \`!filter pulsator\`
+<a:chap:814607523092103171>\`!filter nightcote\`--\`!filter pulsator\`
 <a:chap:814607523092103171>\`!filter vibrato\` -- \`!filter clear\`
 <a:chap:814607523092103171>\`!filter surrounding\`
 **{[<a:links:813729922643263558>[Links}**
