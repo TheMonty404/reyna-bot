@@ -38,7 +38,7 @@ module.exports = {
 \`%loop\` - \`%lyrics\` - \`%radio\`
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 **Filter Commands**
->>>>>>>>>>>>>>>
+>>>>>>>>>>>>>
 \`%filter bassboost\` - \`%filter 8D\`
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 \`%filter vaporwave\` - \`%filter tremolo\`
