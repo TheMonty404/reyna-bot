@@ -25,11 +25,11 @@ module.exports = {
 \`!ping\` -- \`!prefix\` -- \`!uptime\`
 <a:music:813460704031145986>**Music Commands**<a:music:813460704031145986>
 >>>>>>>>>>>>>>
-\`!play\` -- \`!skip\` -- \`!skipto\`
-\`!stop\` -- \`!volume\` -- \`!nowplaying\`
-\`!shuffle\` -- \`!search\` -- \`!resume\`
-\`!remove\` -- \`!queue\` 
-\`!loop\` -- \`!lyrics\` -- \`!radio\`
+<a:dark:813714900777959444>\`!play\` -- \`!skip\` -- \`!skipto\`
+<a:dark:813714900777959444>\`!stop\` -- \`!volume\` -- \`!nowplaying\`
+<a:dark:813714900777959444>\`!shuffle\` -- \`!search\` -- \`!resume\`
+<a:dark:813714900777959444>\`!remove\` -- \`!queue\` 
+<a:dark:813714900777959444>\`!loop\` -- \`!lyrics\` -- \`!radio\`
 **Filter Commands**
 >>>>>>>>>>>>>
 \`!filter bassboost\` -- \`!filter 8D\`
