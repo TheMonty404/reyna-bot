@@ -19,7 +19,7 @@ module.exports = {
     .setTitle(`**Rayal Help**`)
     .setDescription(`
 
-**User Commands**
+<a:discord:813406342173818910**User Commands**
 >>>>>>>>>>>>>
 \`!invite\` -- \`!support\` -- \`!about\`
 \`!ping\` -- \`!prefix\` -- \`!uptime\`
