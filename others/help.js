@@ -21,22 +21,22 @@ module.exports = {
 
 **User Commands**
 >>>>>>>>>>>>>
-\`!invite\` -- \`!support\` -- \`!about\`
-\`!ping\` -- \`!prefix\` -- \`!uptime\`
+\`!invite\` - \`!support\` - \`!about\`
+\`!ping\` - \`!prefix\` - \`!uptime\`
 <a:music:813460704031145986>**Music Commands**<a:music:813460704031145986>
 >>>>>>>>>>>>>>
-<a:dark:813714900777959444>\`!play\` -- \`!skip\` -- \`!skipto\`
-<a:dark:813714900777959444>\`!stop\` -- \`!volume\` -- \`!nowplaying\`
-<a:dark:813714900777959444>\`!shuffle\` -- \`!search\` -- \`!resume\`
-<a:dark:813714900777959444>\`!remove\` -- \`!queue\` 
-<a:dark:813714900777959444>\`!loop\` -- \`!lyrics\` -- \`!radio\`
+<a:dark:813714900777959444>\`!play\` - \`!skip\` - \`!skipto\`
+<a:dark:813714900777959444>\`!stop\` - \`!volume\` - \`!nowplaying\`
+<a:dark:813714900777959444>\`!shuffle\` - \`!search\` - \`!resume\`
+<a:dark:813714900777959444>\`!remove\` - \`!queue\` 
+<a:dark:813714900777959444>\`!loop\` - \`!lyrics\` - \`!radio\`
 **Filter Commands**
 >>>>>>>>>>>>>
-<a:chap:814607523092103171>\`!filter bassboost\` -- \`!filter 8D\`
-<a:chap:814607523092103171>\`!filter vaporwave\`--\`!filter tremolo\`
-<a:chap:814607523092103171>\`!filter phaser\` -- \`!filter subboost\`
-<a:chap:814607523092103171>\`!filter nightcote\`--\`!filter pulsator\`
-<a:chap:814607523092103171>\`!filter vibrato\` -- \`!filter clear\`
+<a:chap:814607523092103171>\`!filter bassboost\` - \`!filter 8D\`
+<a:chap:814607523092103171>\`!filter vaporwave\`-\`!filter tremolo\`
+<a:chap:814607523092103171>\`!filter phaser\` - \`!filter subboost\`
+<a:chap:814607523092103171>\`!filter nightcote\`-\`!filter pulsator\`
+<a:chap:814607523092103171>\`!filter vibrato\` - \`!filter clear\`
 <a:chap:814607523092103171>\`!filter surrounding\`
 **{[<a:links:813729922643263558>[Links}**
 >>>>>>>>>
