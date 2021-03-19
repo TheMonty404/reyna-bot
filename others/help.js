@@ -26,7 +26,7 @@ module.exports = {
 \`!ping\` - \`!prefix\` - \`!uptime\`
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 **Music Commands**
-~>>>>>>>>>>>>>
+>>>>>>>>>>>>>>
 \`!play\` - \`!skip\` - \`!skipto\`
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 \`%stop\` - \`%volume\` - \`%nowplaying\`
