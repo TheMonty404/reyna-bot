@@ -24,7 +24,7 @@ module.exports = {
 <a:discord:767019332042883082>\`!invite\` - \`!support\` - \`!about\`
 \`!ping\` - \`!prefix\` - \`!uptime\`
 <a:music:813460704031145986>**Music Commands**<a:music:813460704031145986>
->>>>>>>>>>>>>>
+>>>>>>><a:music:813460704031145986>>>>>>>>
 <a:dark:813714900777959444>\`!play\` - \`!skip\` - \`!skipto\`
 <a:dark:813714900777959444>\`!stop\` - \`!volume\` - \`!nowplaying\`
 <a:dark:813714900777959444>\`!shuffle\` - \`!search\` - \`!resume\`
