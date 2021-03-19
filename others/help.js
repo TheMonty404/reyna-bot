@@ -30,7 +30,7 @@ module.exports = {
 <a:dark:813714900777959444>\`!shuffle\` - \`!search\` - \`!resume\`
 <a:dark:813714900777959444>\`!remove\` - \`!queue\` 
 <a:dark:813714900777959444>\`!loop\` - \`!lyrics\` - \`!radio\`
-**Filter Commands**
+<a:emoji_22:822512247561519124>**Filter Commands**<a:emoji_22:822512247561519124>
 >>>>>>>>>>>>>
 <a:chap:814607523092103171>\`!filter bassboost\` - \`!filter 8D\`
 <a:chap:814607523092103171>\`!filter vaporwave\`-\`!filter tremolo\`
