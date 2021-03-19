@@ -39,7 +39,7 @@ module.exports = {
 =======================
 **Filter Commands**
 =============
-\`%filter bassboost\` - \`%filter 8D\` - \`%filter clear\`
+\`%filter bassboost\` - \`%filter 8D\`
 =======================
 \`%filter vaporwave\` - \`%filter tremolo\`
 =======================
@@ -47,9 +47,10 @@ module.exports = {
 =======================
 \`%filter nightcote\` - \`%filter pulsator\`
 =======================
-\`%filter vibrato\` - \`%filter surrounding\` - 
+\`%filter vibrato\` - \`%filter surrounding\`
 =======================
-
+\`%filter clear\`
+=======================
 **{[<a:links:813729922643263558>][Links}**
 [{Support}](https://discord.gg/mwJmT7wkwn)
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
