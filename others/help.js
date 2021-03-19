@@ -19,11 +19,11 @@ module.exports = {
     .setTitle(`**Rayal Help**`)
     .setDescription(`
 
-<a:721921499962933248:781510696265449493>**User Commands**
+**User Commands**
 >>>>>>>>>>>>>
 \`!invite\` -- \`!support\` -- \`!about\`
 \`!ping\` -- \`!prefix\` -- \`!uptime\`
-**Music Commands**
+<a:music:813460704031145986>**Music Commands**<a:music:813460704031145986>
 >>>>>>>>>>>>>>
 \`!play\` -- \`!skip\` -- \`!skipto\`
 \`!stop\` -- \`!volume\` -- \`!nowplaying\`
