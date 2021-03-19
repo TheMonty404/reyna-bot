@@ -42,7 +42,8 @@ module.exports = {
 >>>>>>>>>
 [{Support}](https://discord.gg/mwJmT7wkwn)
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
-`)(`https://cdn.discordapp.com/emojis/781510696265449493.gif `)
+`)
+(`https://cdn.discordapp.com/emojis/781510696265449493.gif `)
     .setDescription(`
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
