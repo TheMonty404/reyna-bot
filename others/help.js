@@ -25,7 +25,7 @@ module.exports = {
 =======================
 \`%ping\` - \`%prefix\` - \`%uptime\`
 =======================
-**Music Commands**
+<a:links:813729922643263558>**Music Commands**
 =============
 \`%play\` - \`%skip\` - \`%skipto\`
 =======================
