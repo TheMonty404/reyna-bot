@@ -97,7 +97,7 @@ client.on(`message`, async (message) => {
 
 [{Support}](https://discord.gg/mwJmT7wkwn)
 
-[Invite](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
 
 **{Developers Bot}** :
 Dev/Aquaman#5186
