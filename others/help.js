@@ -32,12 +32,12 @@ module.exports = {
 <a:dark:813714900777959444>\`!loop\` -- \`!lyrics\` -- \`!radio\`
 **Filter Commands**
 >>>>>>>>>>>>>
-<a:emoji_20:813716400408887316>\`!filter bassboost\` -- \`!filter 8D\`
-<a:emoji_20:813716400408887316>\`!filter vaporwave\` -- \`!filter tremolo\`
-<a:emoji_20:813716400408887316>\`!filter phaser\` -- \`!filter subboost\`
-<a:emoji_20:813716400408887316>\`!filter nightcote\` -- \`!filter pulsator\`
-<a:emoji_20:813716400408887316>\`!filter vibrato\` -- \`!filter clear\`
-<a:emoji_20:813716400408887316>\`!filter surrounding\`
+<a:chap:814607523092103171>\`!filter bassboost\` -- \`!filter 8D\`
+<a:chap:814607523092103171>\`!filter vaporwave\` -- \`!filter tremolo\`
+<a:chap:814607523092103171>\`!filter phaser\` -- \`!filter subboost\`
+<a:chap:814607523092103171>\`!filter nightcote\` -- \`!filter pulsator\`
+<a:chap:814607523092103171>\`!filter vibrato\` -- \`!filter clear\`
+<a:chap:814607523092103171>\`!filter surrounding\`
 **{[<a:links:813729922643263558>[Links}**
 >>>>>>>>>
 [{Support}](https://discord.gg/mwJmT7wkwn)
