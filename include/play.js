@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("PURPLE")
-        .setAuthor(`Music Queue ended.`, "https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png")
+        .setAuthor(`Music Queue ended.`, "https://images-ext-2.discordapp.net/external/sgK9ggHfs-bLZHFzmiOg9V6pw5w0qsW4sN00kU4qMtQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/b25a811f2d1306df4c30e34e302bd6c7.png")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -133,14 +133,14 @@ module.exports = {
 
     try {
       const newsong = new MessageEmbed()
-       .setTitle("<:emoji_3:822203003859107890> "+song.title)
+       .setTitle("🎶 "+song.title)
         .setURL(song.url)
-        .setColor("PURPLE")
+        .setColor("RANDOM")
         .setImage(thumb)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
-         .addField("<:emoji_4:822203026776391711> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("<:emoji_3:822203003859107890> Length:", `\`${song.duration} Minutes\``, true)
-        .addField("<:emoji_1:822202947646783519> Volume:", `\`100\``, true)
+        .setThumbnail(`https://images-ext-2.discordapp.net/external/sgK9ggHfs-bLZHFzmiOg9V6pw5w0qsW4sN00kU4qMtQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/b25a811f2d1306df4c30e34e302bd6c7.png `)
+         .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
+        .addField("🔊 Volume:", `\`100\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
@@ -186,9 +186,9 @@ module.exports = {
         let nowPlaying = new MessageEmbed()
           .setTitle("Now playing")
           .setDescription(`[**${song.title}**](${song.url})`)
-          .addField("<:emoji_4:822203026776391711> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-          .addField("<:emoji_3:822203003859107890> Length:", `\`${song.duration} Minutes\``, true)
-          .setColor("PURPLE")
+          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+          .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
+          .setColor("RANDOM")
           //if its a stream
           if(ms >= 10000) {
             nowPlaying.addField("\u200b", "🔴 LIVE", false);
@@ -228,7 +228,7 @@ module.exports = {
           } else {
             queue.playing = !queue.playing;
             queue.connection.dispatcher.resume();
-            const playembed = new MessageEmbed().setColor("PURPLE")
+            const playembed = new MessageEmbed().setColor("RANDOM")
               .setAuthor(`${user.username} resumed the music!`, "https://cdn.discordapp.com/emojis/769912238236106793.png")
             queue.textChannel.send(playembed).catch(console.error);
           }
@@ -238,7 +238,7 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.loop = !queue.loop;
-          const loopembed = new MessageEmbed().setColor("PURPLE")
+          const loopembed = new MessageEmbed().setColor("RANDOM")
             .setAuthor(`Loop is now ${queue.loop ? " enabled" : " disabled"}`, "https://cdn.discordapp.com/emojis/769913064194834511.png")
           queue.textChannel.send(loopembed).catch(console.error);
           break;
