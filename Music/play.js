@@ -57,25 +57,25 @@ const search = args.join(" ");
     try {
       if (serverQueue) {
         if (urlValid) {
-          message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> [\`LINK\`](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("RANDOM")
+            .setDescription(`**🔎 Searching 🖇 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("RANDOM")
+            .setDescription(`**🔎 Searching \`${args.join(" ")}\`**`))
         }
       } else {
         queueConstruct.connection = await channel.join();
-        message.channel.send(new MessageEmbed().setColor("PURPLE")
-          .setDescription(`** <:emoji_5:822203051082252368> Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
+        message.channel.send(new MessageEmbed().setColor("RANDOM")
+          .setDescription(`**✔️ Joined \`${channel.name}\` 📄 bound \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         if (urlValid) { 
-          message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> [\`LINK\`](${args.join(" ")})**`))
+          message.channel.send(new MessageEmbed().setColor("RANDOM")
+            .setDescription(`**🔎 Searching 🖇 [\`LINK\`](${args.join(" ")})**`))
         }
         else {
-          message.channel.send(new MessageEmbed().setColor("PURPLE")
-            .setDescription(`**<:emoji_7:822203487555026986> Searching <:emoji_6:822203074386067526> \`${args.join(" ")}\`**`))
+          message.channel.send(new MessageEmbed().setColor("RANDOM")
+            .setDescription(`**🔎 Searching \`${args.join(" ")}\`**`))
         }
         queueConstruct.connection.voice.setSelfDeaf(true);
         queueConstruct.connection.voice.setDeaf(true);
@@ -135,15 +135,15 @@ catch {
       }
 serverQueue.songs.push(song);
       const newsong = new MessageEmbed()
-        .setTitle("<:emoji_3:822203003859107890> "+song.title)
+        .setTitle("🎶 "+song.title)
         .setURL(song.url)
-        .setColor("PURPLE")
+        .setColor("RANDOM")
         .setImage(thumb)
-        .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
-         .addField("<:emoji_4:822203026776391711> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-        .addField("<:emoji_3:822203003859107890> Length:", `\`${song.duration} Minutes\``, true)
-        .addField("<:emoji_1:822202947646783519> Volume:", `\`100\``, true)
-        .addField("<:emoji_3:822203003859107890> Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
+        .setThumbnail(`https://images-ext-2.discordapp.net/external/sgK9ggHfs-bLZHFzmiOg9V6pw5w0qsW4sN00kU4qMtQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/b25a811f2d1306df4c30e34e302bd6c7.png `)
+         .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+        .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
+        .addField("🔊 Volume:", `\`100\``, true)
+        .addField("📈 Position in queue:", `**\`${serverQueue.songs.length - 1}\`**`, true)
         return serverQueue.textChannel
         .send(newsong)
         .catch(console.error);
