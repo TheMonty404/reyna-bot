@@ -72,7 +72,7 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-    client.user.setActivity(`Type: ${PREFIX}help - Rayal/Music`, { type: "PLAYING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Panther Bot`, { type: "PLAYING"});
     client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
    
   
@@ -114,7 +114,7 @@ client.on(`message`, async (message) => {
 
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
-    message.reply(new Discord.MessageEmbed().setColor("PURPLE").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
+    message.reply(new Discord.MessageEmbed().setColor("RANDOM").setAuthor(`${message.author.username}, My Prefix is ${prefix}, to get started; type ${prefix}help`, message.author.displayAvatarURL({dynamic:true})));
   } 
 
 
@@ -124,28 +124,28 @@ client.on(`message`, async (message) => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("PURPLE")
-    .setAuthor("About Rayal Bot.", "https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png")
-    .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
+    .setColor("RANDOM")
+    .setAuthor("About Panther Bot.", "https://images-ext-2.discordapp.net/external/sgK9ggHfs-bLZHFzmiOg9V6pw5w0qsW4sN00kU4qMtQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/b25a811f2d1306df4c30e34e302bd6c7.png")
+    .setThumbnail(`https://images-ext-2.discordapp.net/external/sgK9ggHfs-bLZHFzmiOg9V6pw5w0qsW4sN00kU4qMtQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/b25a811f2d1306df4c30e34e302bd6c7.png `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/mwJmT7wkwn)
+[{Support}](https://discord.gg/progresshome)
 
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
 
 **{Developers Bot}** :
-Dev/Aquaman#5186
+Dev/<@701546840063082601>
 
 **{Set Status}** :
 Online
 
 **{Time Create}** :
-14/3/2021
+19/6/2021
 
 **{Prefix Bot}** :
-!
+$
 
 `)
 
@@ -160,17 +160,17 @@ Online
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("PURPLE")
+    .setColor("RANDOM")
     .setDescription (`
-<:emoji_3:822203003859107890> {Links}
+{Links}
 
-[{Support}](https://discord.gg/mwJmT7wkwn)
+[{Support}](https://discord.gg/progresshome)
 -
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=811298712348262470&permissions=8&scope=bot)`)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setImage(``)
-    .setTitle(`**{Support  RAYAL}**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/811334922786177035/821692647096713216/PicsArt_03-14-11.44.59.png `)
+    .setTitle(`**{Support  Panther Bot}**`) 
+    .setThumbnail(`https://images-ext-2.discordapp.net/external/sgK9ggHfs-bLZHFzmiOg9V6pw5w0qsW4sN00kU4qMtQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/b25a811f2d1306df4c30e34e302bd6c7.png `)
     .setTimestamp()
     
     //send the Message
@@ -191,7 +191,7 @@ client.on("guildCreate" , AQUAMAN => {
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("PURPLE")
+    .setColor("RANDOM")
     .setDescription(saymsg)
     //delete the Command
     message.delete({timeout: 300})
@@ -221,8 +221,8 @@ client.on("guildCreate" , AQUAMAN => {
    if (now < expirationTime) {
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
-      new MessageEmbed().setColor("PURPLE")
-      .setTitle(`<:emoji_4:822203026776391711>\`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
+      new MessageEmbed().setColor("RANDOM")
+      .setTitle(`Please wait\` \`${timeLeft.toFixed(1)} seconds\` \`before reusing the\` \`${prefix}${command.name}\` `)    
      );
    }
  }
@@ -232,7 +232,7 @@ client.on("guildCreate" , AQUAMAN => {
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("PURPLE")
+   message.reply( new MessageEmbed().setColor("RANDOM")
    .setTitle(`There was an error executing that command.`)).catch(console.error);
  }
 
