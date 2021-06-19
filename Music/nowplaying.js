@@ -41,9 +41,9 @@ execute(message) {
     //define embed
     let nowPlaying = new MessageEmbed()
           .setTitle("**Now playing**")
-          .addField("<:emoji_4:822203026776391711> Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
-          .addField("<:emoji_3:822203003859107890> Length:", `\`${song.duration} Minutes\``, true)
-          .setColor("PURPLE")
+          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
+          .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
+          .setColor("RANDOM")
           
       //if its a stream
       if(ms >= 10000) {
