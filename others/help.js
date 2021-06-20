@@ -36,6 +36,7 @@ module.exports = {
 **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
 \`sad\` - \`cartoon\` - \`anime\`
+\`neon\`
 
 **Filter Commands**
 \`filter bassboost\` - \`filter 8D\`
