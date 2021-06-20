@@ -32,7 +32,7 @@ module.exports = {
 
 **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
-\`sad\` - /`cartoon\` - \`anime\`
+\`sad\` - \`cartoon\` - \`anime\`
 
 **Filter Commands**
 \`filter bassboost\` - \`filter 8D\`
