@@ -19,6 +19,9 @@ module.exports = {
     .setTitle(`**Panda Help**`)
     .setDescription(`
 
+***<a:emoji_23:856117298346983425>  | Prefix bot ***
+***__$__***
+
 >>> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
