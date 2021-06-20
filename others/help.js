@@ -31,7 +31,8 @@ module.exports = {
 \`lyrics\` - \`radio\`
 
 **Gif Commands**
-\`boy\`
+\`boy\` - \`girl\` - \`couple\`
+\`sad\`
 
 **Filter Commands**
 \`filter bassboost\` - \`filter 8D\`
