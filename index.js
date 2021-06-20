@@ -224,7 +224,6 @@ client.on("message", message => {
   }
 });
 
-``` 
 client.on('message',message => { 
 
  
@@ -284,8 +283,6 @@ message.channel.send(embed)
 Ban.ban(); 
 
 }}})
-
-```
 
 client.on("guildCreate", guild => {
   let channel = client.channels.cache.get("856135435909857300");
