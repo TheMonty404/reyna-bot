@@ -252,36 +252,6 @@ client.on("guildDelete", guild => {
   channel.send(embed);
 });
 
-client.on('message',message => {
- 
-if(message.content.startsWith(PREFIX+ 'ban')) {
-let args = message.content.split(" ").slice(1)
-if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('Sorry, you can't perform this command')
- 
-let Ban = message.mentions.members.first();
-let hokar = args.slice(1).join(" ");
-if(!args[0]) return message.channel.send('Please Person Mention Do It To Ban Do')
-if(!Ban) return message.channel.send(`${args[0]}      This Person Dosesn't Exist In Server`)
-if(!hokar) return message.channel.send('Specify a Reason')
- 
-if(!Ban.bannable) {
-return message.channel.send('You Can't Ban This Person')
- 
-}
- 
-if(Ban.bannable) {
- 
-const embed = new Discord.MessageEmbed()
-.setTitle('Ban')
-.setColor('RANDOM')
-.addField(User ban', Ban)
-.addField('ban user by', message.author)
-.addField('Reason', Reason)
-.setFooter('')
-message.channel.send(embed)
- 
-Ban.ban();
-}}})
 
 
 client.on(`ready`, () => {	
