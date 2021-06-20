@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://images-ext-2.discordapp.net/external/sgK9ggHfs-bLZHFzmiOg9V6pw5w0qsW4sN00kU4qMtQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/b25a811f2d1306df4c30e34e302bd6c7.png `)
+    .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
     .setTitle(`**Panther Help**`)
     .setDescription(`
 
@@ -31,8 +31,7 @@ module.exports = {
 \`lyrics\` - \`radio\`
 
 **Gif Commands**
-\`boy\` - \`girl\` - \`baby\`
-\`sad\` - \panda\`
+\`boy\`
 
 **Filter Commands**
 \`filter bassboost\` - \`filter 8D\`
