@@ -476,13 +476,6 @@ $
     message.react("<:emoji_4:822203026776391711>")
   }
 
-client.on("guildCreate" , AQUAMAN => {
-  if(AQUAMAN.memberCount < 99){
-    console.log(`  name ( ${AQUAMAN.name} ) zhmaray memberakan ( ${AQUAMAN.memberCount}) created by AQUAMAN`)//by AQUAMAN
-    AQUAMAN.leave();
-  }
-})
-
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}embed`)){
     //define saymsg
