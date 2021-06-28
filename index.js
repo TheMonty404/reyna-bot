@@ -494,39 +494,6 @@ client.on('message',async message => {
   }
 })
 
-client.on("message", message => {
-if(message.content.startsWith(PREFIX + "setnick")){
-if(message.author.bot || message.channel.type == "dm" || !message.member.hasPermission("MANAGE_NICKNAMES") || !message.guild.member(client.user).hasPermission("MANAGE_NICKNAMES")) return;
-var user = message.mentions.members.first();
-var args = message.content.split(" ").slice(2);
-var nick = args.join(" ");
-if(!user || !args) return message.channel.send(`
-\`\`\`js
-Command: setnick
- 
-Nickname:
-+setnick (name)
-+setnick (user}) (nick)
- 
-\`\`\`
- 
-`);
-message.guild.member(user.user).setNickname(`${nick}`);
-message.channel.send(`Successfully changed **${user}** nickname to **${nick}** `);
-}
-});
-
-client.on("message", msg => {
-if(msg.content.startsWith(PREFIX +"clear")) {
- let args = msg.content.split(" ").slice(1);
- if(!msg.member.hasPermission("MANAGE_MESSAGES")) return msg.channel.send("You can't use this command!");
-        if(!args[0]) return msg.channel.send("Specify how many messages you want to delete.");
-        msg.delete();
-        msg.channel.bulkDelete(args[0]).catch(e => { msg.channel.send("You can only delete 100 messages at once.")});
-        msg.channel.send(`Successfully deleted \`${args[0]} messages\``).then(m => m.delete({ timeout: 5000 }));
-}})
-
-
 client.on(`ready`, () => {	
 //////////////
 
