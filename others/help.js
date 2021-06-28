@@ -22,7 +22,7 @@ module.exports = {
 ***<a:emoji_23:856117298346983425>  | Prefix bot ***
 ***__$__***
 
->>> <a:emoji_7:859099940499750912> **User Commands**
+<a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 \'tinvites\` - \`sug\` - \`roleuser\`
