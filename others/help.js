@@ -50,7 +50,7 @@ module.exports = {
 <a:SIA_money:859103987889864734> **Economy Commands**
 \`Comming Soon\`
 
-<a:dslink:788798276409098252> **Links**
+<a:dslink:859104935194656779> **Links**
 [Support](https://discord.gg/progresshome)
 [Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
 `)
