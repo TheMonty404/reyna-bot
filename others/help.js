@@ -27,26 +27,26 @@ module.exports = {
 \`ping\` - \`prefix\` - \`uptime\`
 \'tinvites\`
 
-<a:music:852559405718175744> **Music Commands**
+**Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
 \`remove\` - \`queue\` - \`loop\`
 \`lyrics\` - \`radio\`
 
-<a:Work:852558706708054056> **Moderation Commands**
+**Moderation Commands**
 \`ban\` - \`unban\` - \`setnick\`
 \`roleadd\` - \`roleremove\` - \`vkick\`
 
-<a:emoji_22:856127603345195019> **Gif Commands**
+**Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\`
 
-<a:Twitt3:852558825395453952> **Text Commands**
+**Text Commands**
 \`Comming Soon\`
 
-<a:emoji_20:856127714804105216> **Game Commands**
+**Game Commands**
 \`kiss\` - \`slap\` - \'hug\`
 
 <a:SIA_money:859103987889864734> **Economy Commands**
