@@ -450,49 +450,6 @@ client.on("message", message => {
   }
 });
 
-client.on('message', async message=>{
-  if(message.content.startsWith(PREFIX +'unban')){
-if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('bbura to natwane am frmana anjam bdait')
-    let args = message.content.split(" ").slice(1)
-if(!args[0]) return message.channel.send('tkaya kasek mention bka bo unban krdn')
-const reason = args[1] || "be hokar"
-let unban = await client.users.fetch(args[0])
- 
-message.guild.members.unban(unban,reason)
-const qala = new Discord.MessageEmbed()
- 
-  .setTitle('unBan')  
-    .addField('kase unban kraw ',unban)
- 
-.addField('un ban kra la layan',message.author)
- 
-.addField('ba hokare',reason)
-.setFooter('')
-message.channel.send(qala)
- 
-  }})
-
-client.on('message',async message => {
-  if(message.content.startsWith(PREFIX + "vkick")) { 
-   if (!message.member.hasPermission("MANAGE_GUILD")) {
-      return message.channel.send("pewist ba role bo anjamdane amkara");
-    }
- 
-    if (!message.mentions.members.first())
-      return message.channel.send(
-        `kasek mention bka bo kick voice!`
-      );
- 
-    let { channel} = message.mentions.members.first().voice;
- 
-    if (!channel)
-      return message.channel.send(`am kasa la voice niya`);
- 
-    message.mentions.members.first().voice.kick();
- 
-    message.channel.send(`kick kra la voice !`)
-  }
-})
 
 client.on(`ready`, () => {	
 //////////////
