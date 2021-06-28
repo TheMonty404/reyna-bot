@@ -427,6 +427,183 @@ client.on('message',  (message) => {
 message.channel.send(embed)
         }})
 
+client.on("message", message => {
+  if (message.content.startsWith(PREFIX + "kick")) {
+    if (!message.member.hasPermission("KICK_MEMBERS"))
+      return message.channel.send("**You dont have premission**");
+    let tag = message.mentions.members.first();
+    if (!tag) return "**Aw kasa La server nya**";
+    let args = message.content.split(" ").slice(1);
+    if (!args)
+      return message.channel.send("**Please Mention Member**");
+      if (!message.guild.member(tag).kickable) return message.reply("**I cant Kick Member Because The Member High Roles**");
+    var blackjack = "Black sestam";
+    const ban = new Discord.MessageEmbed()
+      .setTitle("**Banned In a Server**")
+      .addField("Guild", message.guild.name)
+      .addField("Name member ban", tag)
+      .addField("Moderation", message.author.tag)
+      .setFooter("")
+      .setColor("RANDOM");
+    message.channel.send(ban);
+    tag.kick();
+  }
+});
+
+client.on('message', async message=>{
+  if(message.content.startsWith(PREFIX +'unban')){
+if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('bbura to natwane am frmana anjam bdait')
+    let args = message.content.split(" ").slice(1)
+if(!args[0]) return message.channel.send('tkaya kasek mention bka bo unban krdn')
+const reason = args[1] || "be hokar"
+let unban = await client.users.fetch(args[0])
+ 
+message.guild.members.unban(unban,reason)
+const qala = new Discord.MessageEmbed()
+ 
+  .setTitle('unBan')  
+    .addField('kase unban kraw ',unban)
+ 
+.addField('un ban kra la layan',message.author)
+ 
+.addField('ba hokare',reason)
+.setFooter('')
+message.channel.send(qala)
+ 
+  }})
+
+client.on('message',async message => {
+  if(message.content.startsWith(PREFIX + "vkick")) { 
+   if (!message.member.hasPermission("MANAGE_GUILD")) {
+      return message.channel.send("pewist ba role bo anjamdane amkara");
+    }
+ 
+    if (!message.mentions.members.first())
+      return message.channel.send(
+        `kasek mention bka bo kick voice!`
+      );
+ 
+    let { channel} = message.mentions.members.first().voice;
+ 
+    if (!channel)
+      return message.channel.send(`am kasa la voice niya`);
+ 
+    message.mentions.members.first().voice.kick();
+ 
+    message.channel.send(`kick kra la voice !`)
+  }
+})
+
+client.on("message", message => {
+if(message.content.startsWith(PREFIX + "setnick")){
+if(message.author.bot || message.channel.type == "dm" || !message.member.hasPermission("MANAGE_NICKNAMES") || !message.guild.member(client.user).hasPermission("MANAGE_NICKNAMES")) return;
+var user = message.mentions.members.first();
+var args = message.content.split(" ").slice(2);
+var nick = args.join(" ");
+if(!user || !args) return message.channel.send(`
+\`\`\`js
+Command: setnick
+ 
+Nickname:
++setnick (name)
++setnick (user}) (nick)
+ 
+\`\`\`
+ 
+`);
+message.guild.member(user.user).setNickname(`${nick}`);
+message.channel.send(`Successfully changed **${user}** nickname to **${nick}** `);
+}
+});
+
+client.on("message", msg => {
+if(msg.content.startsWith(PREFIX +"clear")) {
+ let args = msg.content.split(" ").slice(1);
+ if(!msg.member.hasPermission("MANAGE_MESSAGES")) return msg.channel.send("You can't use this command!");
+        if(!args[0]) return msg.channel.send("Specify how many messages you want to delete.");
+        msg.delete();
+        msg.channel.bulkDelete(args[0]).catch(e => { msg.channel.send("You can only delete 100 messages at once.")});
+        msg.channel.send(`Successfully deleted \`${args[0]} messages\``).then(m => m.delete({ timeout: 5000 }));
+}})
+
+client.on('message',async message => {
+  if(message.content.startsWith(PREFIX + "roleadd")) { 
+ 
+if (!message.member.hasPermission("MANAGE_GUILD")) {
+      return message.channel.send("pewist ba role bo anjamdane amkara");
+    }
+    if (!message.guild.me.hasPermission("MANAGE_GUILD")) {
+      return message.channel.send("rolem niya tawakw am kara bkam");
+    } 
+    let qawrma = message.mentions.members.first();
+    if(!qawrma) return message.reply(`kasek mention bka !`)
+    let shla = message.mentions.roles.first();
+    if(!shla) return message.reply(` rolek mention bka `)
+ 
+      const embed = new Discord.MessageEmbed()
+ 
+      .setColor("RANDOM")
+      .setDescription(`Done changed role for ${qawrma.user.username} added ${shla}`)
+ 
+      await message.channel.send(embed)
+ 
+      qawrma.roles.add(shla)
+ 
+  }
+})
+
+client.on('message',async message => {
+  if(message.content.startsWith(PREFIX + "roleremove")) { 
+ 
+if (!message.member.hasPermission("MANAGE_GUILD")) {
+      return message.channel.send("pewist ba role bo anjamdane amkara");
+    }
+    if (!message.guild.me.hasPermission("MANAGE_GUILD")) {
+      return message.channel.send("rolem niya tawakw am kara bkam");
+    } 
+    let qawrma = message.mentions.members.first();
+    if(!qawrma) return message.reply(`kasek mention bka !`)
+    let shla = message.mentions.roles.first();
+    if(!shla) return message.reply(` rolek mention bka `)
+ 
+      const embed = new Discord.MessageEmbed()
+ 
+      .setColor("RANDOM")
+      .setDescription(`Done changed role for ${qawrma.user.username} removed ${shla}`)
+ 
+      await message.channel.send(embed)
+ 
+      qawrma.roles.remove(shla)
+ 
+  }
+})
+
+client.on("message", async message => {
+  if (message.content.startsWith(PREFIX + "tinvites")) {
+    if (message.author.bot) return;
+    if (!message.channel.guild)
+      return message.reply(" Error : ` Server Command `");
+ 
+    var invites = await message.guild.fetchInvites();
+    invites = invites.array();
+    invites, "uses", { reverse: true };
+    let possibleInvites = ["User Invited |  Uses "];
+    invites.forEach(i => {
+      if (i.uses === 0) {
+        return;
+      }
+      possibleInvites.push([
+        "\n " + "<@" + i.inviter.id + ">" + "  :  " + i.uses
+      ]);
+    });
+    let embed = new Discord.MessageEmbed()
+      .setColor("RANDOM")
+      .addField("Top Invites.", `${possibleInvites}`);
+ 
+    message.channel.send(embed);
+  }
+});
+
 
 client.on(`ready`, () => {	
 //////////////
