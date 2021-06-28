@@ -25,7 +25,9 @@ module.exports = {
 >>> <a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
-\'tinvites\`
+\'tinvites\` - \`sug\` - \`roleuser\`
+\`report\`
+
 
 **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
@@ -37,6 +39,8 @@ module.exports = {
 **Moderation Commands**
 \`ban\` - \`unban\` - \`setnick\`
 \`roleadd\` - \`roleremove\` - \`vkick\`
+\`setprefix\` - \`clear\` - \`close\`
+\`open\` - \`senddm\`
 
 **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
