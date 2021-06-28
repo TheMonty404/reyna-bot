@@ -581,6 +581,224 @@ client.on("message", async message => {
   }
 });
 
+client.on('message', function(message) {
+    if(message.content.startsWith(PREFIX  + "report")) {
+        let messageArgs = message.content.split(" ").slice(1).join(" ");
+        let messageReason = message.content.split(" ").slice(2).join(" ");
+        if(!messageReason) return message.reply("**# Specify a reason!**");
+   let mUser = message.mentions.members.first();
+    if(!mUser) return message.channel.send("Couldn't find user.");
+    let Rembed = new Discord.MessageEmbed()
+    .setTitle("`New Report!`")
+    .setThumbnail(message.author.avatarURL)
+    .addField("**# - Reported User:**",mUser,true)
+    .addField("**# - Reported User ID:**",mUser.id,true)
+    .addField("**# - Reason:**",messageReason,true)
+    .addField("**# - Channel:**",message.channel,true)
+    .addField("**# - Time:**",message.createdAt,true)
+    .setFooter("If the reporting was a joke, the person reporting would be subject to penalties")
+message.channel.send(Rembed)
+message.channel.send("Sended Your report to  report Channel").then(msg => {
+    msg.react("✅")
+    msg.react("❌")
+.then(() => msg.react('❌'))
+.then(() =>msg.react('✅'))
+let reaction1Filter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;
+let reaction2Filter = (reaction, user) => reaction.emoji.name === '❌' && user.id === message.author.id;
+ 
+let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
+let reaction2 = msg.createReactionCollector(reaction2Filter, { time: 12000 });
+reaction1.on("collect", r => {
+    message.guild.owner.send(Rembed)
+    message.reply("**# - Done! 🎇**");
+})
+reaction2.on("collect", r => {
+    message.reply("**# - Canceled!**");
+})
+})
+}
+});
+
+client.on("message", message => {
+  if (!message.content.startsWith(PREFIX)) return;
+  if (!message.channel.guild)
+    return 
+  let command = message.content.split(" ")[0];
+  command = command.slice(PREFIX.length);
+  if (command === "g") {
+    var sabotage = message.mentions.users.first();
+    if (sabotage == message.author)
+      return message.reply(`**No please menition user**`);
+    if (sabotage === client.user) return message.reply(`**Why?**`);
+    if (sabotage < 1) {
+      message.delete();
+      return message.channel.sendMessage(
+        "Put something to kill like mention your username or use an emoji"
+      );
+    }
+    if (!sabotage)
+      return message.channel.send(`Please Mention A Member to Kill :warning:`);
+    message.channel.send("▄︻̷̿┻̿═━一 ${sabotage").then(msg => {
+      msg.edit('    **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
+      setTimeout(function() {
+        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
+      }, 1000);
+      setTimeout(function() {
+        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
+      }, 2000);
+      setTimeout(function() {
+        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
+      }, 3000);
+      setTimeout(function() {
+        msg.edit('  **`___SLOTS___  `**                                                    <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554> <a:emoji_56:859017377261420554>                                                                      `|         ||         |` ');
+      }, 4000);
+      setTimeout(function() {
+        msg.edit('  **`___SLOTS___  `**                                                    <:slots2:421472583347732511> <:slots1:421472583410515969> <:slots3:421472582924238869>                                                                               `|         ||         |` ');
+      }, 5000);
+      msg.delete(6000);
+      message.delete();
+    });
+    message.channel
+      .send("**** The crime has been successfully hidden 🕳 **")
+      .then(msg => msg.delete(7000));
+  }
+});
+
+client.on('message',async message => {
+  if(message.content.startsWith(PREFIX + "roleuser")) { 
+ 
+let member_r = message.mentions.members.first() || message.member,
+  user = member_r.user;
+let bawan= new Discord.MessageEmbed()
+  .addField('this member have this Roles:', member_r.roles.cache.map(r => `${r}`).join(', '), true)
+ 
+message.channel.send(bawan)
+}})
+
+let Prefix = "+"; 
+
+client.on("message", async message => {
+let prefix2 = await db.fetch(`prefix_${message.guild.id}`);
+if (prefix2 === null) prefix2 = Prefix;
+const prefix = prefix2;
+if (!message.content.startsWith(prefix)) return;
+const args = message.content.slice(prefix.length).trim().split(/ +/g);
+const cmd = args.shift().toLowerCase();
+if (cmd === "prefix" || cmd === "setprefix") {
+if (!message.guild) return;
+if (!message.guild.member(message.author).hasPermission("ADMINISTRATOR"))
+return message.reply("**- You Don't Have `ADMINISTRATOR` Permission.**");
+if (!args[0]) return message.channel.send(`**- Please tell me what a prefix !!**`);
+if (args[0].length > 3) {
+  return message.channel.send("**Please tell me prefix under 3 numbers!!**")
+}
+db.set(`prefix_${message.guild.id}`, args[0]);
+message.channel.send(`**✅ Done, Set New Prefix \`[${args[0]}]\` From Your Server.**`);
+}
+if (cmd === "test") { // كود test للتجربة
+message.reply("**Set Prefix Working ✅**")
+}
+});
+
+ client.on('message',async message => {
+  if(message.content.startsWith(PREFIX + "sug")) {
+  let args = message.content.split(" ").slice(1)
+ 
+    if(!args.length) {
+      return message.channel.send("Please Give the Suggestion")
+    }
+ 
+    let channel = message.guild.channels.cache.find((x) => (x.name === "suggestion" || x.name === "suggestions"))
+ 
+    if(!channel) {
+      return message.channel.send("there is no channel with name - suggestions")
+    }
+ 
+ 
+    let embed = new Discord.MessageEmbed()
+    .setAuthor("SUGGESTION: " + message.author.tag, message.author.avatarURL())
+    .setThumbnail(message.author.avatarURL())
+    .setColor("#ff2050")
+    .setDescription(args.join(" "))
+    .setTimestamp()
+ 
+ 
+    channel.send(embed).then(m => {
+      m.react("✅")
+      m.react("❌")
+    })
+ 
+ 
+ 
+    message.channel.send("Sended Your Suggestion to  Suggestions Channel")
+ 
+  }
+})
+
+client.on('message', msg => {
+ if (msg.content.startsWith(PREFIX + 'senddm')) {
+ 
+   if(!msg.member.hasPermission('ADMINISTRATOR')) return
+   let args = msg.content.split(' ').slice(1)
+ 
+ 
+      if (!args[0]) return msg.channel.send(``)
+      if (!args[1]) return msg.channel.send(``)
+      let alpha = msg.mentions.members.first()
+      if (!alpha) return msg.channel.send()
+      let alphaEmbed = new Discord.MessageEmbed()
+      .setTitle('bawan is here')
+      .setDescription(args.join(" "))
+ 
+      client.users.cache.get(`${alpha.id}`).send(alphaEmbed)
+      msg.channel.send('```DONE```')
+    }
+});
+
+
+  
+  client.on("message", message => {
+  if (message.content === PREFIX + "open") {
+    if (!message.channel.guild) return;
+    if (!message.member.hasPermission("MANAGE_CHANNELS"))
+      return message.reply("You dont have Perms `MANAGE CHANNELS`:x:");
+    message.channel.createOverwrite(message.guild.id, {
+      VIEW_CHANNEL: true
+    });
+    const embed = new Discord.MessageEmbed()
+      .setThumbnail(message.author.avatarURL())
+      .setTitle("**Channel unhided**")
+      .addField("Guild name", message.guild.name)
+      .addField("Channel", message.channel.name)
+      .addField("Moderation", `<@${message.author.id}>`, true)
+      .setColor("RANDOM");
+    message.channel.send(embed).then(bj => {
+      bj.react("🔓");
+    });
+  }
+});
+
+client.on("message", message => {
+  if (message.content === PREFIX + "close") {
+    if (!message.channel.guild) return;
+    if (!message.member.hasPermission("MANAGE_CHANNELS"))
+      return message.reply("You Dont Have Perms `MANAGE CHANNELS` :x:");
+    message.channel.createOverwrite(message.guild.id, {
+      VIEW_CHANNEL: false
+    });
+    const embed = new Discord.MessageEmbed()
+      .setThumbnail(message.author.avatarURL())
+      .setTitle("**Channel hided**")
+      .addField("Guild name", message.guild.name)
+      .addField("Channel", message.channel.name)
+      .addField("Moderation", `<@${message.author.id}>`, true)
+      .setColor("RANDOM");
+    message.channel.send(embed).then(bj => {
+      bj.react("🔒");
+    });
+  }
+});
+
 
 client.on(`ready`, () => {	
 //////////////
