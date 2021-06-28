@@ -351,7 +351,7 @@ client.on("message", message => {
 });
 
 client.on('message',  (message) => {
-        if(message.content.startsWith('PREFIX + hug')) {
+        if(message.content.startsWith(PREFIX + "hug")) {
   let user = message.mentions.users.first() 
   if (!user) return message.reply('mention someone to Hug')
  
@@ -381,7 +381,7 @@ message.channel.send(embed)
         }})
 
 client.on('message',  (message) => {
-        if(message.content.startsWith('PREFIX + slap')) {
+        if(message.content.startsWith(PREFIX + "slap")) {
   let user = message.mentions.users.first();
   if (!user) return message.reply('mention someone to Slap')
   let slaps = [
@@ -404,7 +404,7 @@ message.channel.send(embed)
         }})
 
 client.on('message',  (message) => {
-        if(message.content.startsWith('PREFIX + kiss')) {
+        if(message.content.startsWith(PREFIX + "kiss")) {
   let user = message.mentions.users.first();
   if (!user) return message.reply('mention someone to Kiss')
   var kiss = [
