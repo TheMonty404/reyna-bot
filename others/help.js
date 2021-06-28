@@ -25,6 +25,7 @@ module.exports = {
 >>> <a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
+\'tinvites\`
 
 <a:music:852559405718175744> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
@@ -34,7 +35,8 @@ module.exports = {
 \`lyrics\` - \`radio\`
 
 <a:Work:852558706708054056> **Moderation Commands**
-\`Comming Soon\`
+\`ban\` - \`unban\` - \`setnick\`
+\`roleadd\` - \`roleremove\` - \`vkick\`
 
 <a:emoji_22:856127603345195019> **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
@@ -45,7 +47,7 @@ module.exports = {
 \`Comming Soon\`
 
 <a:emoji_20:856127714804105216> **Game Commands**
-\`Comming Soon\`
+\`kiss\` - \`slap\` - \'hug\`
 
 <a:SIA_money:859103987889864734> **Economy Commands**
 \`Comming Soon\`
