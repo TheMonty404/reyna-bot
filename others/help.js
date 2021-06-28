@@ -22,32 +22,37 @@ module.exports = {
 ***<a:emoji_23:856117298346983425>  | Prefix bot ***
 ***__$__***
 
->>> **User Commands**
+>>> <a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 
-**Music Commands**
+<a:music:852559405718175744> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
 \`remove\` - \`queue\` - \`loop\`
 \`lyrics\` - \`radio\`
 
-**Gif Commands**
+<a:Work:852558706708054056> **Moderation Commands**
+\`Comming Soon\`
+
+<a:emoji_22:856127603345195019> **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\`
 
-**Filter Commands**
-\`filter bassboost\` - \`filter 8D\`
-\`filter vaporwave\`-\`filter tremolo\`
-\`filter phaser\` - \`filter subboost\`
-\`filter nightcote\`-\`filter pulsator\`
-\`filter vibrato\` - \`filter clear\`
-\`filter surrounding\`
+<a:Twitt3:852558825395453952> **Text Commands**
+\`Comming Soon\`
 
-[{Support}](https://discord.gg/progresshome)
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
+<a:emoji_20:856127714804105216> **Game Commands**
+\`Comming Soon\`
+
+<a:SIA_money:859103987889864734> **Economy Commands**
+\`Comming Soon\`
+
+<a:dslink:788798276409098252> **Links**
+[Support](https://discord.gg/progresshome)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
