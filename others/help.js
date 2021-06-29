@@ -25,27 +25,32 @@ module.exports = {
 \`ping\` - \`prefix\` - \`uptime\`
 \`tinvites\` - \`sug\` - \`roleuser\`
 \`report\`
-**Music Commands**
+<a:music:852559405718175744> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
 \`remove\` - \`queue\` - \`loop\`
 \`lyrics\` - \`radio\`
-**Moderation Commands**
+<a:Work:852558706708054056> **Moderation Commands**
 \`ban\` - \`unban\` - \`setnick\`
 \`roleadd\` - \`roleremove\` - \`vkick\`
 \`setprefix\` - \`clear\` - \`close\`
 \`open\` - \`senddm\`
-**Gif Commands**
+
+<a:emoji_22:856127603345195019> **Gif Commands**
 \`boy\` - \`girl\` - \`couple\`
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\`
-**Text Commands**
+
+<a:Twitt3:852558825395453952> **Text Commands**
 \`Comming Soon\`
-**Game Commands**
-\`kiss\` - \`slap\` - \'hug\`
+
+<a:emoji_20:856127714804105216> **Game Commands**
+\`kiss\` - \`slap\` - \`hug\`
+
 <a:SIA_money:859103987889864734> **Economy Commands**
 \`Comming Soon\`
+
 <a:dslink:859104935194656779> **Links**
 [Support](https://discord.gg/progresshome)
 [Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
