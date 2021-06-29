@@ -23,7 +23,7 @@ module.exports = {
 <a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
-\'tinvites\` - \`sug\` - \`roleuser\`
+\`tinvites\` - \`sug\` - \`roleuser\`
 \`report\`
 **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
