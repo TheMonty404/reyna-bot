@@ -18,7 +18,7 @@ module.exports = {
     .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
     .setTitle(`**Panda Help**`)
     .setDescription(`
-***<a:emoji_23:856117298346983425>  | Prefix bot ***
+*** <a:emoji_23:852559927339253851>  | Prefix bot ***
 ***__>__***
 <a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
