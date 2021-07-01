@@ -289,7 +289,7 @@ client.on("guildCreate", guild => {
   let channel = client.channels.cache.get("850779924352466984");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✅ Join Server`)
+  .setTitle( `✔️ Join Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
   .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
