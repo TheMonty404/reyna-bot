@@ -25,12 +25,14 @@ module.exports = {
 \`ping\` - \`prefix\` - \`uptime\`
 \`tinvites\` - \`sug\` - \`roleuser\`
 \`report\`
+
 <a:music:852559405718175744> **Music Commands**
 \`play\` - \`skip\` - \`skipto\`
 \`stop\` - \`volume\` - \`nowplaying\`
 \`shuffle\` - \`search\` - \`resume\`
 \`remove\` - \`queue\` - \`loop\`
 \`lyrics\` - \`radio\`
+
 <a:Work:852558706708054056> **Moderation Commands**
 \`ban\` - \`unban\` - \`setnick\`
 \`roleadd\` - \`roleremove\` - \`vkick\`
