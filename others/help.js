@@ -15,7 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(` `)
+    .setThumbnail(`https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg `)
     .setTitle(`**Random Help**`)
     .setDescription(`
 *** <a:emoji_23:852559927339253851>  | Prefix bot ***
