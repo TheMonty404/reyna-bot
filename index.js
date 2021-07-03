@@ -887,33 +887,33 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor("About Panda Bot.", "https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png")
-    .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
+    .setAuthor("Random Bot About", "https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png")
+    .setThumbnail(`https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
     .setDescription(`
 
-[{Support}](https://discord.gg/progresshome)
+[{Support}](https://discord.gg/YMjsqqp8Gw)
 
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
 
-**{Developers Bot}** :
-Dev/<@701546840063082601>
+<:VeryBot:832234492872884245> **(Owner Bot)** :
+Dev/Monty404#6985
 
-**{Set Status}** :
+<a:emoji_180:856878164592427028> **(Set Status)** :
 Online
 
-**{Time Create}** :
-19/6/2021
+<a:E14567BBEE164342AF58DF6872011807:853287588390633502> **(Time Create)** :
+12/4/2021 /5:04AM
 
-**{Prefix Bot}** :
-$
+<:Developer:827947991448027146> **(Prefix Bot)** :
+*
 
 `)
 
     //send the Message
     message.channel.send(embed)
-    message.react("<:emoji_4:822203026776391711>")
+    message.react("<a:53EC4B02339C41BF9A83F5597463DBEB:853287599720235029>")
   } 
 
 //An suuport announcement for everyone but no one knows so fine ^w^
@@ -926,13 +926,13 @@ $
     .setDescription (`
 {Links}
 
-[{Support}](https://discord.gg/progresshome)
+[{Support}](https://discord.gg/YMjsqqp8Gw)
 -
-[{Invite}](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)`)
+[{Invite}](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setImage(``)
-    .setTitle(`**{Support  Panda Bot}**`) 
-    .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
+    .setImage(`https://media.discordapp.net/attachments/851565209743130654/860938919759446056/image0.gif`)
+    .setTitle(`**{Support  Random Bot}**`) 
+    .setThumbnail(`https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg `)
     .setTimestamp()
     
     //send the Message
