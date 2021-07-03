@@ -887,7 +887,7 @@ client.on(`message`, async (message) => {
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
-    .setAuthor("Random Bot About", "https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png")
+    .setAuthor("Random Bot About", "https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg")
     .setThumbnail(`https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg `)
     .setFooter(message.author.username, message.author.displayAvatarURL)
     .setTimestamp()
@@ -906,8 +906,8 @@ Online
 <a:E14567BBEE164342AF58DF6872011807:853287588390633502> **(Time Create)** :
 12/4/2021 /5:04AM
 
-<:Developer:827947991448027146> **(Prefix Bot)** :
-*
+<:Developer:827947991448027146> **(Prefix 
+[*]
 
 `)
 
@@ -1001,4 +1001,4 @@ function delay(delayInms) {
  });
 }
 
-//Bot coded by Aquaman#5186 
+//Bot coded by Monty#6985 
