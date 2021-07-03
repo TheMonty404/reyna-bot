@@ -22,7 +22,7 @@ module.exports = {
 
   
    .setColor("RANDOM");
-   message.react("<:emoji_4:822203026776391711>")
+   message.react("<a:53EC4B02339C41BF9A83F5597463DBEB:853287599720235029>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
