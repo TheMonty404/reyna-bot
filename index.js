@@ -288,7 +288,7 @@ Ban.ban();
 
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("850779924352466984");
+  let channel = client.channels.cache.get("851563694370324480");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✔️ Join Server`)
@@ -302,7 +302,7 @@ client.on("guildCreate", guild => {
 
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("850779924352466984");
+  let channel = client.channels.cache.get("855572760713232384");
   let embed = new MessageEmbed()
   .setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
@@ -388,7 +388,7 @@ client.on('message',  (message) => {
 .setDescription(`${message.author.username} Hugs ${user.username}!`)
  
 .setImage(hugs[Math.floor(Math.random() * hugs.length)])
-.setFooter('create by bawan ')
+.setFooter('Random Bot ')
 message.channel.send(embed)
  
         }})
@@ -834,7 +834,7 @@ client.on(`ready`, () => {
         { return member.voice.channel.leave(); }
       });
       
-    client.user.setActivity(`Type: ${PREFIX}help - Panda Bot`, { type: "PLAYING"});
+    client.user.setActivity(`Type: ${PREFIX}help - Random Bot Is here for fun`, { type: "PLAYING"});
     client.user.setActivity(`Type: ${PREFIX}help | ${client.guilds.cache.size} Server,Users ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)},`, { type: "PLAYING"});
    
   
