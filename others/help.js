@@ -15,11 +15,11 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
-    .setTitle(`**Panda Help**`)
+    .setThumbnail(` `)
+    .setTitle(`**Random Help**`)
     .setDescription(`
 *** <a:emoji_23:852559927339253851>  | Prefix bot ***
-***__>__***
+***__[*]__***
 <a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
@@ -54,8 +54,8 @@ module.exports = {
 \`Comming Soon\`
 
 <a:dslink:859104935194656779> **Links**
-[Support](https://discord.gg/progresshome)
-[Invite](https://discord.com/api/oauth2/authorize?client_id=807350534901071932&permissions=8&scope=bot)
+[Support](https://discord.gg/AkYA68Z2gG)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
