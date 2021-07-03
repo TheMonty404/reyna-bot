@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("RANDOM")
-        .setAuthor(`Music Queue ended.`, "https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png")
+        .setAuthor(`Music Queue ended.`, "https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -140,7 +140,7 @@ module.exports = {
         .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
-        .addField("🔊 Volume:", `\`100\``, true)
+        .addField("📣 Volume:", `\`100\``, true)
 
       var playingMessage = await queue.textChannel.send(newsong);
       
@@ -148,7 +148,7 @@ module.exports = {
       await playingMessage.react("⏯️"); //pause
       await playingMessage.react("🔁"); //loop
       await playingMessage.react("⏹️"); //stop
-      await playingMessage.react("🕛"); //np
+      await playingMessage.react("💬"); //np
     } catch (error) {
       console.error(error);
     }
