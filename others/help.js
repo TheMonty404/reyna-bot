@@ -19,7 +19,7 @@ module.exports = {
     .setTitle(`**Random Help**`)
     .setDescription(`
 *** <a:emoji_23:852559927339253851>  | Prefix bot ***
-***__[*]__***
+***__*__***
 <a:emoji_7:859099940499750912> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
