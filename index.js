@@ -288,10 +288,10 @@ Ban.ban();
 
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("851563694370324480");
+  let channel = client.channels.cache.get("861399446008102923");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✔️ Join Server`)
+  .setTitle( `✅ Join Server`)
   .addField("🔠 **Server Name**", `${guild.name}`)
   .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
@@ -302,12 +302,12 @@ client.on("guildCreate", guild => {
 
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("855572760713232384");
+  let channel = client.channels.cache.get("861399487233654834");
   let embed = new MessageEmbed()
   .setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `❌ Left Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
+  .setTitle( `❎ Left Server`)
+  .addField("❔ **Server Name**", `${guild.name}`)
   .addField("👑 **Server Owner**", `${guild.owner}`)
   .addField("🆔 **Server Id**", `${guild.id}`)
   .addField("👥 **Member Count**", `${guild.memberCount}`)
