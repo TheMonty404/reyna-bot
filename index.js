@@ -123,6 +123,16 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/608711480346542102/782286421020508170/image0_1.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782284851570147358/image0-1-4.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782406047473467422/image0.gif",
+      "https://media.discordapp.net/attachments/737807251825360977/805157325647904788/image3.gif",
+      "https://images-ext-2.discordapp.net/external/XNfBHzKy7buK63kTXnhneedCZesXjDt4YzXc4aHRyP0/https/media.discordapp.net/attachments/711465242798063706/800617858567634973/image0.gif",
+      "https://media.discordapp.net/attachments/608711480346542102/814490854554468352/couple_4.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/801547963507802112/a_56138fd67f8998f8a1e77747e6d82541.gif",
+      "https://images-ext-1.discordapp.net/external/58Mz8ecPw4jYUViFOE7NaHjYUJmOhFWwbW6YKIWBCt8/https/media.discordapp.net/attachments/761565272942968852/767126026123345960/luisa71.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/800010113834156082/image0-10.gif",
+      "https://images-ext-1.discordapp.net/external/C-RvC0mBX56TXehO28nY1NcVwENPHDRbhl3SeIbeB_4/https/media.discordapp.net/attachments/711465242798063706/801763419916599326/couples_142._1.gif",
+      "https://media.discordapp.net/attachments/787757651752779826/800870670174388244/image2.gif",
+      "https://media.discordapp.net/attachments/694694675679936585/800743146614947920/hit_gif_15.gif",
+      "https://media.discordapp.net/attachments/672961356412092416/809899257511018566/jaguarcouple_68.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782148760997593098/a_8bc52b6080ce3079988c6e49f84c4b03.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782445443665625128/ezgif-7-2032ed99845d.gif",
       "https://media.discordapp.net/attachments/608711480346542102/782196955488321556/a_637b8e2042d540a1e5e28282e3fe5cc7.gif",
@@ -371,6 +381,7 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/755890505681731714/856134635972591636/Comp_22.gif",
       "https://media.discordapp.net/attachments/755890505681731714/856094705813422090/a_a46b7692563509a4a7332280f8aed01f-1.gif",
       "https://media.discordapp.net/attachments/755890505681731714/856066337788133377/neon_1-1.gif",
+      "https://media.discordapp.net/attachments/767332506101219348/781553930323755068/JustLethia.gif",
       "https://media.discordapp.net/attachments/755890505681731714/856039171788767292/sol._of.gif",
       "https://media.discordapp.net/attachments/755890505681731714/856034861047480320/Nice_gif_pfp.gif",
       "https://media.discordapp.net/attachments/755890505681731714/855995485688954900/a_4f85b11851dd2fd40c275af63e24ca9c.gif",
@@ -407,7 +418,10 @@ client.on('message',  (message) => {
   "https://media.discordapp.net/attachments/738277612039962688/775010008823103508/image2.gif",
   "https://media.discordapp.net/attachments/738277612039962688/775010008982224896/image3.gif",
   "https://media.discordapp.net/attachments/738277612039962688/775010009151045692/image4.gif",
+  "https://images-ext-1.discordapp.net/external/4enFwioluJ2wUTxGTx3YhHg_hcVxZcSnVDiJk9-48Ps/http/i.imgur.com/cLHRyeB.gif",
+  "https://images-ext-2.discordapp.net/external/dI8V6HMg-HD1jC6QuJLrBJe9S5z3uXwXD8epc3lg_m4/http/i.imgur.com/FOdbhav.gif",
   "https://media.discordapp.net/attachments/738277612039962688/775010009322094602/image5.gif",
+  "https://images-ext-2.discordapp.net/external/l2UT2UeLq1KeBWae7c33nm9aKVvnI07iimUxeSkpyL0/http/i.imgur.com/K52NZ36.gif",
   "https://media.discordapp.net/attachments/738277612039962688/775010009578340382/image6.gif",
   "https://media.discordapp.net/attachments/738277612039962688/775010009796575262/image7.gif",
   "https://media.discordapp.net/attachments/738277612039962688/775010009972867082/image8.gif",
@@ -668,7 +682,7 @@ client.on("message", message => {
   if (!message.content.startsWith(PREFIX)) return;
   if (!message.channel.guild)
     return 
-  let command = message.content.split(" ")[0];
+  let command = message.content.split(" kill ")[0];
   command = command.slice(PREFIX.length);
   if (command === "g") {
     var sabotage = message.mentions.users.first();
