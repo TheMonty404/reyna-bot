@@ -22,8 +22,25 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870793716858880/a_57a7f6c875e3a329b170edf177392911.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870817351368734/5-2.gif",
+      "https://media.discordapp.net/attachments/721044386217197699/799354023324155974/a_7a979c79c2ea562424102c7a568cc414.gif",
       "https://media.discordapp.net/attachments/786897044483604490/804007829010513966/image1.gif",
+      "https://media.discordapp.net/attachments/694693923486171177/800424696499535932/hit_gif_17.gif",
       "https://media.discordapp.net/attachments/786897044483604490/804007829483552838/image3.gif",
+      "https://media.discordapp.net/attachments/694693923486171177/806970254621802576/35.gif",
+      "https://media.discordapp.net/attachments/694693923486171177/806970237726883891/33.gif",
+      "https://images-ext-1.discordapp.net/external/P5uNnqSxhGI3teuGGQImRV2rmlLEbbv-EL_rq1coXnQ/https/media.discordapp.net/attachments/711468906451304449/803236761794510869/a_845de78a829b75eb3e225e9ea7967b75.gif",
+      "https://images-ext-1.discordapp.net/external/z45wVs7BqTPCOWr74xzVePHQF6QgljYD3egnyKPuRRk/https/media.discordapp.net/attachments/736281826141798402/736312944177971260/5.gif",
+      "https://media.discordapp.net/attachments/737803513052266622/793385269180629002/image0.gif",
+      "https://media.discordapp.net/attachments/630159060162838568/804791195377074216/a_c1cb5f987d38d8716a8a014b00f072d2.gif",
+      "https://media.discordapp.net/attachments/721044386217197699/798459008489881620/chermie-32.gif",
+      "https://media.discordapp.net/attachments/811847868821667861/814952491674370078/6356546.gif",
+      "https://media.discordapp.net/attachments/694693923486171177/806971488229130321/efe_gif_35.gif",
+      "https://media.discordapp.net/attachments/694693923486171177/800432445308010516/hit_gif_23.gif",
+      "https://media.discordapp.net/attachments/737803513052266622/798099721985851432/image0.gif",
+      "https://images-ext-2.discordapp.net/external/nBwcGAokNyU61mdCjSZJWDnC8KlcY978JrE2CTIqJOw/https/media.discordapp.net/attachments/761565276243623937/786556038605701160/a_aa30ade4ea0d65486fc62910e0b97682.gif",
+      "https://media.discordapp.net/attachments/737803513052266622/799650053358747658/image0.gif",
+      "https://media.discordapp.net/attachments/659108282291585055/805505499848114226/image0.gif",
+      "https://media.discordapp.net/attachments/694693923486171177/800425731548774451/gif_265.gif",
       "https://media.discordapp.net/attachments/786897044483604490/804219672513478706/Lenora_36.gif",
       "https://media.discordapp.net/attachments/786897044483604490/804220384899498064/Lenora_28.gif",
       "https://media.discordapp.net/attachments/786897044483604490/804220394697392158/Lenora_33.gif",
@@ -39,7 +56,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} BOY GIFS photos  `,
+          description: `${message.author.username} Boy Gif  `,
           image: {
             url: man[Math.floor(Math.random() * man.length)]
           }
@@ -61,6 +78,21 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897045436366849/804968258859827210/pintrst___luri_4.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804983128527077387/a_177ddfe86ad32b68be6200f007682136.gif",
       "https://media.discordapp.net/attachments/786897045436366849/805008600334073866/3WIu.gif",
+      "https://media.discordapp.net/attachments/787757651752779826/800849143341514772/a_16743dfad984f574da0b7bc2f9a0b07f.gif",
+      "https://images-ext-1.discordapp.net/external/ujA262B7Hy05-od9uoou-aHhiEYGY34Zl75a0JHgfJ8/https/media.discordapp.net/attachments/711468868924604537/803247458871803934/gif-353.gif",
+      "https://images-ext-2.discordapp.net/external/yAmdAMaUicaOsMBgZDe9oQoah7lLDjHRzLXsd-wJuA4/https/media.discordapp.net/attachments/711466145764343899/803290982531465246/a_c511e0571366f78eb91e16b7c4736734.gif",
+      "https://media.discordapp.net/attachments/742107775475253259/821413314068348988/image0.gif",
+      "https://media.discordapp.net/attachments/742107775475253259/818627981580566568/image4.gif",
+      "https://media.discordapp.net/attachments/694694493525377035/737021018333249546/Lorie10.gif",
+      "https://media.discordapp.net/attachments/742107775475253259/820847199222366228/image1.gif",
+      "https://media.discordapp.net/attachments/787757651752779826/800848548798791680/image8-1.gif",
+      "https://media.discordapp.net/attachments/742107775475253259/818627965750345748/image4.gif",
+      "https://media.discordapp.net/attachments/742107775475253259/766092296235909161/image3.gif",
+      "https://media.discordapp.net/attachments/742107775475253259/813880754219122719/image0.gif",
+      "https://media.discordapp.net/attachments/742107775475253259/819151727461662720/image0.gif",
+      "https://images-ext-2.discordapp.net/external/d3lpB0Bqf-qp6fQnOf4iNn6HMrAOsb-EYXf6lzY9BLw/https/media.discordapp.net/attachments/711468868924604537/802157124594434098/a_2fa3d6b37927ad11fd001ce8d9558cec.gif",
+      "https://images-ext-1.discordapp.net/external/REnwN3d9Oz1t8u0ZBav_cgnZtoFxXjZe0-KPEJb_SL8/https/media.discordapp.net/attachments/694695166895849562/797497990763511818/20210109_190245.gif",
+      "https://images-ext-2.discordapp.net/external/831_ol2wWVvX1n378qkmkQxAJoUVmnDbOgm-O3nktzo/https/media.discordapp.net/attachments/711466145764343899/803298402498117638/a_99da7a830c2e4a2e09705e9d15d70436.gif",
       "https://media.discordapp.net/attachments/786897045436366849/805370008330436648/image0.gif",
       "https://media.discordapp.net/attachments/786897045436366849/805008566439641128/image0.gif",
       "https://media.discordapp.net/attachments/786897045436366849/804681217022099466/a_3c85d4517fbaf4f750d344820b49c076.gif",
@@ -72,7 +104,7 @@ client.on("message", message => {
     message.channel
       .send({
         embed: {
-          description: `${message.author.username} GIRL GIFS `,
+          description: `${message.author.username} Girl Gif `,
           image: {
             url: girl[Math.floor(Math.random() * girl.length)]
           }
