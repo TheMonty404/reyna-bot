@@ -1047,4 +1047,12 @@ function delay(delayInms) {
  });
 }
 
+
+
+client.on('message',() =>{
+let spam = client.channels.cache.find(channel=> channel.id === '865666566385434674');
+setInterval(() =>{
+  spam.send("BPLAN B UP : B52💀")}
+  ,5000)})
+
 //Bot coded by Monty#6985 
