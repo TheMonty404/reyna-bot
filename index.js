@@ -1052,7 +1052,7 @@ function delay(delayInms) {
 
 
 client.on('message', message => {
-if(message.content.startsWith("*bawan")) {
+if(message.content.startsWith("*slots")) {
   let slot1 = ['🖤', '🤍', '❤️', '🖤', '💜', '💚', '💛', '🧡'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
