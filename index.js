@@ -1052,12 +1052,19 @@ function delay(delayInms) {
 
 
 client.on('message', message => {
-     if (message.content === "$servers") {
-     let embed = new Discord.MessageEmbed()
-  .setColor("RANDOM")
-  .addField("**| serverakan |**" , client.guilds.cache.size)
-  message.channel.send(embed);
-    }
-}); 
+if(message.content.startsWith("*bawan")) {
+  let slot1 = ['🖤', '🤍', '❤️', '🖤', '💜', '💚', '💛', '🧡'];
+  let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+  let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+  let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+  let we;
+  if(slots1 === slots2 && slots2 === slots3) {
+    we = "you won!"
+  } else {
+    we = "lost!"
+  }
+  message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
+}
+});
 
 //Bot coded by Monty#6985 
