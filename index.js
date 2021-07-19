@@ -952,8 +952,9 @@ Online
 <a:E14567BBEE164342AF58DF6872011807:853287588390633502> **(Time Create)** :
 12/4/2021 /5:04AM
 
-<:Developer:827947991448027146> **(Prefix 
-[*]
+<:Developer:827947991448027146> **(Prefix)** :
+< * >
+
 
 `)
 
@@ -1046,13 +1047,5 @@ function delay(delayInms) {
    }, delayInms);
  });
 }
-
-
-
-client.on('message',() =>{
-let spam = client.channels.cache.find(channel=> channel.id === '865666566385434674');
-setInterval(() =>{
-  spam.send("BPLAN B UP : B52💀")}
-  ,5000)})
 
 //Bot coded by Monty#6985 
