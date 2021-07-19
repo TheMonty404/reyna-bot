@@ -1048,4 +1048,16 @@ function delay(delayInms) {
  });
 }
 
+
+
+
+client.on('message', message => {
+     if (message.content === "$servers") {
+     let embed = new Discord.MessageEmbed()
+  .setColor("RANDOM")
+  .addField("**| serverakan |**" , client.guilds.cache.size)
+  message.channel.send(embed);
+    }
+}); 
+
 //Bot coded by Monty#6985 
