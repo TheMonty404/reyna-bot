@@ -48,7 +48,7 @@ module.exports = {
 \`Comming Soon\`
 
 <a:emoji_20:856127714804105216> **Game Commands**
-\`kiss\` - \`slap\` - \`hug\` - \`slots\`
+\`kiss\` - \`slap\` - \`hug\` - \`slots\`- \`weather\`
 
 <a:SIA_money:859103987889864734> **Economy Commands**
 \`Comming Soon\`
