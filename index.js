@@ -1053,7 +1053,7 @@ function delay(delayInms) {
 
 client.on('message', message => {
 if(message.content.startsWith("*slots")) {
-  let slot1 = ['🖤', '🤍', '❤️', '🖤', '💜', '💚', '💛', '🧡'];
+  let slot1 = ['💎', '🧿', '🪙', '💎', '🧿', '🪙', '💎', '🪙'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
@@ -1066,5 +1066,45 @@ if(message.content.startsWith("*slots")) {
   message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
 }
 });
+
+
+
+const weather = require("weather-js");
+ 
+client.on('message',async message => {
+  if(message.content.startsWith(prefix + "weather")) {
+ 
+  let args = message.content.split(" ").slice(1)
+    let city = args.join(" ");
+    let degreetype = "C"; // You can change it to F. (fahrenheit.) ean ba dlli xot bka
+ 
+    await weather.find({search: city, degreeType: degreetype}, function(err, result) {
+        if (!city) return message.channel.send("Please insert the city.");
+        if (err || result === undefined || result.length === 0) return message.channel.send("Unknown city. Please try again.");
+ 
+        let current = result[0].current;
+        let location = result[0].location;
+ 
+        const embed = new Discord.MessageEmbed()
+        .setAuthor(current.observationpoint)
+        .setDescription(`> ${current.skytext}`)
+        .setThumbnail(current.imageUrl)
+        .setTimestamp()
+        .setColor(0x7289DA)
+ 
+        embed.addField("Latitude", location.lat, true)
+        .addField("Longitude", location.long, true)
+        .addField("Feels Like", `${current.feelslike}° Degrees`, true)
+        .addField("Degree Type", location.degreetype, true)
+        .addField("Winds", current.winddisplay, true)
+        .addField("Humidity", `${current.humidity}%`, true)
+        .addField("Timezone", `GMT ${location.timezone}`, true)
+        .addField("Temperature", `${current.temperature}° Degrees`, true)
+        .addField("Observation Time", current.observationtime, true)
+.addField('create by bawan', true)
+        return message.channel.send(embed);
+    })
+};   
+  })
 
 //Bot coded by Monty#6985 
