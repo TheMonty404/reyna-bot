@@ -1067,17 +1067,4 @@ if(message.content.startsWith("*slots")) {
 }
 });
 
-
-
-
-client.on('ready', () => { console.log(`Logged in as ${client.user.tag}!`
-); 
-});
-client.on("message" m => {
-if(m.content === "<@792754963759235074>") {
-m.reply("Gyane Mn Chaware bka");
-m.react("<:VeryBot:832234492872884245>");
-}
-});
-
 //Bot coded by Monty#6985 
