@@ -1067,4 +1067,31 @@ if(message.content.startsWith("*slots")) {
 }
 });
 
+
+
+const bawan = ["792754963759235074"] //id xot dane
+ 
+const bawanprefix = "*";
+client.on('message', message => {
+    var argresult = message.content.split(` `).slice(1).join(' ');
+ 
+ 
+client.on('message', message => {
+    var argresult = message.content.split(` `).slice(1).join(' ');
+      if (!bawan.includes(message.author.id)) return;
+ 
+ 
+    if (message.content === (bawanprefix + "leave")) {
+    message.guild.leave();        
+ message.channel.send('```DONE```')
+ 
+ 
+    } 
+ 
+})
+ 
+ 
+})
+
+
 //Bot coded by Monty#6985 
