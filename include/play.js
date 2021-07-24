@@ -21,7 +21,7 @@ module.exports = {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
       const endembed = new MessageEmbed().setColor("RANDOM")
-        .setAuthor(`Music Queue ended.`, "https://media.discordapp.net/attachments/851565209743130654/860933971977961481/image0.jpg")
+        .setAuthor(`Music Queue ended.`, "https://media.discordapp.net/attachments/857029431030054993/859771060648280104/image0.jpg")
       return queue.textChannel.send(endembed).catch(console.error);
     }
 
@@ -137,7 +137,7 @@ module.exports = {
         .setURL(song.url)
         .setColor("RANDOM")
         .setImage(thumb)
-        .setThumbnail(`https://images-ext-1.discordapp.net/external/ywW90Qq3ButrY58SXGKsfdaHJ5Fl3fAX-jCt66kxq2k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/807350534901071932/323c09ffbcd4777d8b5d14ac80df56a5.png `)
+        .setThumbnail(`https://media.discordapp.net/attachments/857029431030054993/859771060648280104/image0.jpg `)
          .addField("👤 Requested by:", `\`${message.author.username}#${message.author.discriminator}\``, true)
         .addField("⏱ Length:", `\`${song.duration} Minutes\``, true)
         .addField("📣 Volume:", `\`100\``, true)
@@ -247,7 +247,7 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return;
           queue.songs = [];
-          const stopembed = new MessageEmbed().setColor("RANDOM").setAuthor(`${user.username} stopped the music!`, "https://cdn.discordapp.com/emojis/769915194066862080.png")
+          const stopembed = new MessageEmbed().setColor("RANDOM").setAuthor(`${user.username} stopped the music!`, "https://media.discordapp.net/attachments/857029431030054993/859771060648280104/image0.jpg")
           queue.textChannel.send(stopembed).catch(console.error);
           try {
             queue.connection.dispatcher.end();
