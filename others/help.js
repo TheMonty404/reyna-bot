@@ -20,7 +20,7 @@ module.exports = {
     .setDescription(`
 *** <a:emoji_23:852559927339253851>  | Prefix bot ***
 ***__*__***
-<a:emoji_7:859099940499750912> **User Commands**
+<a:emoji_180:856878164592427028> **User Commands**
 \`invite\` - \`support\` - \`about\`
 \`ping\` - \`prefix\` - \`uptime\`
 \`tinvites\` - \`sug\` - \`roleuser\`
@@ -45,15 +45,13 @@ module.exports = {
 \`neon\`
 
 <a:emoji_181:856878209554317332> **Text Commands**
-\`Comming Soon\`
+\`texstkurd(tk)\`\`texstenglish(te)\`\`texstpersian(tp)\`
+\`texstarab(ta)\`\`texstturk(tt)\`
 
 <a:806D997882224ABDBC3552C77CF6EE3C:853287594003923014> **Game Commands**
 \`kiss\` - \`slap\` - \`hug\` - \`slots\`- \`weather\`
 
-<a:SIA_money:859103987889864734> **Economy Commands**
-\`Comming Soon\`
-
-<a:dslink:859104935194656779> **Links**
+<:AddBack:829334354610225182> **Links**
 [Support](https://discord.gg/AkYA68Z2gG)
 [Invite](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
 `)
