@@ -949,8 +949,9 @@ Dev/Monty404#6985
 <a:emoji_180:856878164592427028> **(Set Status)** :
 Online
 
-<a:E14567BBEE164342AF58DF6872011807:853287588390633502> **(Time Create)** :
-12/4/2021 /5:04AM
+**(channels)** :
+`${client.channels.cache.size}\``, true)
+.addField('<a:DE9806130D2D49FE93C2A4824CBFDB29:855883577731317790> __Users__',  `\`${client.guilds.cache.reduce((a, g) => a +
 
 <:Developer:827947991448027146> **(Prefix)** :
 < * >
