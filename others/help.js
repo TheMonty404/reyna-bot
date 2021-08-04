@@ -18,7 +18,7 @@ module.exports = {
     .setThumbnail(`https://media.discordapp.net/attachments/861399487233654834/872561176456884224/image0.png `)
     .setTitle(`**Random Help**`)
     .setDescription(`
-*** <a:emoji_23:852559927339253851>  | Prefix bot ***
+*** <a:emoji_50:872142301789564969>  | Prefix bot ***
 ***__*__***
 <a:emoji_180:856878164592427028> **User Commands**
 \`invite\` - \`support\` - \`about\`
