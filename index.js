@@ -1051,15 +1051,15 @@ function delay(delayInms) {
 
 client.on('message', message => {
 if(message.content.startsWith("*slots")) {
-  let slot1 = ['💎', '🧿', '🪙', '💎', '🧿', '🪙', '💎', '🪙'];
+  let slot1 = ['<:emoji_61:872141800482160641>', '<:emoji_61:872141800482160641>', '<:emoji_61:872141800482160641>', '<:emoji_61:872141800482160641>', '<:emoji_60:872141904383455272>', '<:emoji_60:872141904383455272>', '<:emoji_60:872141904383455272>', '<:emoji_60:872141904383455272>'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let we;
   if(slots1 === slots2 && slots2 === slots3) {
-    we = "you won!"
+    we = "you won <a:kass:872897079305986108>"
   } else {
-    we = "lost!"
+    we = "lost <a:offline:872897321120186399>"
   }
   message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
 }
@@ -1069,7 +1069,7 @@ if(message.content.startsWith("*slots")) {
 
 const bawan = ["792754963759235074"] //id xot dane
  
-const bawanprefix = "*";
+const bawanprefix = "R";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
  
@@ -1079,7 +1079,7 @@ client.on('message', message => {
       if (!bawan.includes(message.author.id)) return;
  
  
-    if (message.content === (bawanprefix + "leave")) {
+    if (message.content === (bawanprefix + "bro")) {
     message.guild.leave();        
  message.channel.send('```DONE```')
  
