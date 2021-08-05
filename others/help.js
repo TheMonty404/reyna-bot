@@ -44,9 +44,6 @@ module.exports = {
 \`sad\` - \`cartoon\` - \`anime\`
 \`neon\`
 
-<a:emoji_181:856878209554317332> **Text Commands**
-\`texstkurd(tk)\`\`texstenglish(te)\ \`texstpersian(tp)\`
-\`texstarab(ta)\`\`texstturk(tt)\
 
 <a:806D997882224ABDBC3552C77CF6EE3C:853287594003923014> **Game Commands**
 \`kiss\` - \`slap\` - \`hug\` - \`slots\`- \`weather\`
