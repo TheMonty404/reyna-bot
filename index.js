@@ -1050,7 +1050,7 @@ function delay(delayInms) {
 
 
 client.on('message', message => {
-if(message.content.startsWith("*slots")) {
+if(message.content.startsWith("Rslots")) {
   let slot1 = ['<:emoji_61:872141800482160641>', '<:emoji_61:872141800482160641>', '<:emoji_61:872141800482160641>', '<:emoji_61:872141800482160641>', '<:emoji_60:872141904383455272>', '<:emoji_60:872141904383455272>', '<:emoji_60:872141904383455272>', '<:emoji_60:872141904383455272>'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
