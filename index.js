@@ -943,14 +943,10 @@ client.on(`message`, async (message) => {
 
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
 
-<:VeryBot:832234492872884245> **(Owner Bot)** :
-Dev/Monty404#6985
+<a:devv:871813217897316353> **(Owner Bot)** 
+<a:Online:872897515165466764> <@!792754963759235074>
 
-<a:emoji_180:856878164592427028> **(Set Status)** :
-Online
-
-
-<:Developer:827947991448027146> **(Prefix)** :
+'Channels', `\`${client.channels.cache.size}\``, true)
 < * >
 
 
