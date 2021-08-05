@@ -18,34 +18,20 @@ module.exports = {
     .setThumbnail(`https://media.discordapp.net/attachments/861399487233654834/872561176456884224/image0.png `)
     .setTitle(`**Random Help**`)
     .setDescription(`
-*** <a:emoji_50:872142301789564969>  | Prefix bot ***
-***__*__***
-<a:emoji_180:856878164592427028> **User Commands**
-\`invite\` - \`support\` - \`about\`
-\`ping\` - \`prefix\` - \`uptime\`
-\`tinvites\` - \`sug\` - \`roleuser\`
-\`report\`
+> <a:emoji_180:856878164592427028>  **User Commands**
+> **__invite - support- about - ping - prefix - uptime - tinvites - sug - roleuser - report__**
 
-<a:emoji_181:860644268900220938> **Music Commands**
-\`play\` - \`skip\` - \`skipto\`
-\`stop\` - \`volume\` - \`nowplaying\`
-\`shuffle\` - \`search\` - \`resume\`
-\`remove\` - \`queue\` - \`loop\`
-\`lyrics\` - \`radio\`
+> <a:emoji_102:871813008471507004> **Music Commands**
+> **__play - skip - skipto - stop - volume - nowplaying  shuffle - search  - loop - lyrics -radio__**
 
-<a:9FAF7C0CF0104A2F979F1263DF55D91A:855230044258828328> **Moderation Commands**
-\`ban\` - \`unban\` - \`setnick\`
-\`roleadd\` - \`roleremove\` - \`vkick\`
-\`setprefix\` - \`clear\` - \`close\`
-\`open\` - \`senddm\`
+> <a:FBBE600B13DB4F5986B4D0AF89247091:871811080148639794>  **Moderation Commands**
+> **__ban - unban - setnick - roleadd - roleremove - vkick - setprefix - clear - close - open - senddm__**
 
-<a:2716AA835D3841B89F82E038EEB22E82:832234494849187850> **Gif Commands**
-\`boy\` - \`girl\` - \`couple\`
-\`sad\` - \`cartoon\` - \`anime\`
-\`neon\`
+> <a:emoji_11:845102475740577792> **Gif Commands**
+> **__boy - girl - couple - sad - cartoon - anime - neon__**
 
-<a:806D997882224ABDBC3552C77CF6EE3C:853287594003923014> **Game Commands**
-\`kiss\` - \`slap\` - \`hug\` - \`slots\`- \`weather\`
+> <a:kass:872897079305986108> **Game Commands**
+> **__kiss - slap - hug - slots - weather__**
 
 <:AddBack:829334354610225182> **Links**
 [Support](https://discord.gg/AkYA68Z2gG)
