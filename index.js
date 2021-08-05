@@ -943,11 +943,14 @@ client.on(`message`, async (message) => {
 
 [{Invite}](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
 
-<a:devv:871813217897316353> **(Owner Bot)** 
-<a:Online:872897515165466764> <@!792754963759235074>
+> <a:devv:871813217897316353> **(Owner Bot)** 
+> <a:Online:872897515165466764> <@!792754963759235074>
 
-'Channels', `\`${client.channels.cache.size}\``, true)
-< * >
+> <a:IconStatus:872908170568290365> **(Status)**
+> <:IconStatusOnline:872939264722206731> Online : Plying
+
+> <a:emoji_21:806556915798376497> **(Prefix)**
+> <a:FBBE600B13DB4F5986B4D0AF89247091:871811080148639794> ***__R__***
 
 
 `)
