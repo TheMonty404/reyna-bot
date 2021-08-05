@@ -32,6 +32,7 @@ module.exports = {
 
 > <a:kass:872897079305986108> **Game Commands**
 > **__kiss - slap - hug - slots - weather__**
+
 > <a:emoji_103:871813076964507710> **Links**
 > [Support](https://discord.gg/AkYA68Z2gG)
 > [Invite](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
