@@ -27,9 +27,6 @@ module.exports = {
 > <a:FBBE600B13DB4F5986B4D0AF89247091:871811080148639794>  **Moderation Commands**
 > **__ban - unban - setnick - roleadd - roleremove - vkick - setprefix - clear - close - open - senddm__**
 
-> <a:emoji_11:845102475740577792> **Gif Commands**
-> **__boy - girl - couple - sad - cartoon - anime - neon__**
-
 > <a:kass:872897079305986108> **Game Commands**
 > **__kiss - slap - hug - slots - weather__**
 
