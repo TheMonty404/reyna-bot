@@ -1091,4 +1091,18 @@ client.on('message', message => {
 })
 
 
+
+client.on("guildCreate" , DarkMan => {
+
+  if(DarkMan.memberCount < 78 ){
+
+    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
+
+    DarkMan.leave();
+
+  }
+
+})
+
+
 //Bot coded by Monty#6985 
