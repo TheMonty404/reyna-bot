@@ -22,7 +22,7 @@ module.exports = {
 **__invite - support- about - ping - prefix - uptime - tinvites - sug - roleuser - report__**
 
 <a:emoji_102:871813008471507004> **Music Commands**
-**__play - skip - skipto - stop - volume - nowplaying  shuffle - search  - loop - lyrics -radio__**
+**__play - skip - skipto - stop - volume  nowplaying - shuffle - search  - loop - lyrics -radio__**
 
 <a:emoji_11:845102475740577792> **Gif Commands**
 **__boy - girl - couple - sad - cartoon - anime - neon__**
