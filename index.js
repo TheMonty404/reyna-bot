@@ -1105,25 +1105,4 @@ client.on("guildCreate" , DarkMan => {
 })
 
 
-client.on('message', msg => {
-    var moment = require("moment");
-    if (msg.content.startsWith(prefix + "user")) {
-        if (msg.author.bot) return;
-        if (msg.channel.type == "dm") return msg.channel.send(new Discord.MessageEmbed().setColor("RED").setDescription("❌" + ` **You Can't Use This Command In DM's!**`).setFooter(`Request By ${msg.author.tag}`).setTimestamp())
-        let user = msg.mentions.users.first();
-        moment.locale('ar-TN');
-        let id = new Discord.MessageEmbed()
-            .addField('**JOINED DISCORD :**', `${moment(user.createdTimestamp).format('YYYY/M/D')} **\n** \`${moment(user.createdTimestamp).fromNow()}\``, true)
-            .addField('**JOINED SERVER :**', `${moment(user.joinedAt).format('YYYY/M/D')} \n \`${moment(user.joinedAt).fromNow()}\``, true)
-            .setThumbnail(user.avatarURL({
-                dynamic: true,
-                format: 'png',
-                size: 1024
-            }));
-        msg.channel.send(id)
-    }
-})
-
-
-
 //Bot coded by Monty#6985 
