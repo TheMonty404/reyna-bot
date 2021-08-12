@@ -46,3 +46,23 @@ module.exports = {
 
   }
 };
+
+
+const discordButtons = require("discord-buttons-plugin");
+const buttonClient = new discordButtons(client);
+client.on("message", message => {
+  if (message.content === "!ping") {
+    const embed = new Discord.MessageEmbed()
+      .setTitle("help")
+      .setColor("GOLD");
+    const button1 = new buttonClient.MessageButton()
+      .setLabel("support")
+      .setStyle("green")
+      .setURL("https://discord.gg/K8SSqweuSH");
+    buttonClient.send(null, {
+      channel: message.channel.id,
+      embed,
+      buttons: [[button1]]
+    });
+  }
+});
