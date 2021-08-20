@@ -34,10 +34,9 @@ module.exports = {
 **__kiss - slap - hug - slots__**
 
  <a:emoji_103:871813076964507710> **Links**
- [Support](https://discord.gg/AkYA68Z2gG)
- [Invite](https://discord.com/api/oauth2/authorize?client_id=831212084271644733&permissions=8&scope=bot)
- [Website](https://randombotm.code.blog/)
- [Sponsored](https://discord.gg/K8SSqweuSH)
+ [Support](https://discord.gg/K8SSqweuSH)
+ [Invite](https://discord.com/api/oauth2/authorize?client_id=802995353209012234&permissions=8&scope=bot)
+ [Website](coming soon)
 `)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
